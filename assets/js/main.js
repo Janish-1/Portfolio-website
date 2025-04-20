@@ -9,6 +9,98 @@
 (function() {
   "use strict";
 
+  // Global Data
+  const projects = [
+    {
+      title: "Bitcoin Watcher",
+      type: "App",
+      description: "Lightweight Crypto Price Tracker",
+      image: "assets/img/portfolio/app-1.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-web",
+    },
+    {
+      title: "HTML Cloner",
+      type: "Product",
+      description: "Full Webpage Snapshot Extension",
+      image: "assets/img/portfolio/product-1.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-extension",
+    },
+    {
+      title: "Fake News Detection",
+      type: "Branding",
+      description: "NLP-Based Classification App",
+      image: "assets/img/portfolio/branding-1.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-mlai",
+    },
+    {
+      title: "Django API Framework",
+      type: "App",
+      description: "Token-Based REST Server",
+      image: "assets/img/portfolio/app-2.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-api",
+    },
+    {
+      title: "Travel Expense Calculator",
+      type: "App",
+      description: "Voice-Powered Budgeting Tool",
+      image: "assets/img/portfolio/app-3.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-web",
+    },
+    {
+      title: "Node.js Game Framework",
+      type: "Product",
+      description: "Backend API for Multiplayer Games",
+      image: "assets/img/portfolio/product-2.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-api",
+    },
+    {
+      title: "Freecom",
+      type: "Product",
+      description: "NLP-Based Product Guidance & Discount Code Redemption",
+      image: "assets/img/portfolio/product-3.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-mlai",
+    },
+    {
+      title: "News Scraping Jupyter Notebook",
+      type: "Books",
+      description: "Scraping Indian Express News",
+      image: "assets/img/portfolio/books-1.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-scrape",
+    },
+    {
+      title: "WIP Linux Distro",
+      type: "Branding",
+      description: "Lightweight Custom Distro for Developers",
+      image: "assets/img/portfolio/branding-2.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-linux",
+    },
+    {
+      title: "Kaggle Competition Entries",
+      type: "Books",
+      description: "Exploring Machine Learning Algorithms",
+      image: "assets/img/portfolio/books-2.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-mlai",
+    },
+    {
+      title: "VSCode Extension Packs",
+      type: "Product",
+      description: "Developer Productivity Tools",
+      image: "assets/img/portfolio/books-2.jpg",
+      detailsLink: "portfolio-details.html",
+      filterClass: "filter-extension",
+    },
+  ];
+
   /**
    * Header toggle
    */
@@ -138,9 +230,16 @@
    * Init isotope layout and filters
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+    // Populate the portfolio items
+    const portfolioContainer = document.querySelector(".isotope-container");
+    populatePortfolio(projects, portfolioContainer);
+
+        
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+    
+
 
     let initIsotope;
     imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
@@ -166,6 +265,37 @@
     });
 
   });
+
+  function populatePortfolio(projects, container) {
+    projects.forEach((project) => {
+      const projectElement = document.createElement("div");
+      projectElement.classList.add(
+        "col-lg-4",
+        "col-md-6",
+        "portfolio-item",
+        "isotope-item",
+        project.filterClass
+      );
+  
+      projectElement.innerHTML = `
+        <div class="portfolio-content h-100">
+          <img src="${project.image}" class="img-fluid" alt="${project.title}" />
+          <div class="portfolio-info">
+            <h4>${project.title}</h4>
+            <p>${project.description}</p>
+            <a href="${project.image}" title="${project.title}" data-gallery="portfolio-gallery-${project.type.toLowerCase()}" class="glightbox preview-link">
+              <i class="bi bi-zoom-in"></i>
+            </a>
+            <a href="${project.detailsLink}" title="More Details" class="details-link">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+          </div>
+        </div>
+      `;
+  
+      container.appendChild(projectElement);
+    });
+  }
 
   /**
    * Init swiper sliders
@@ -225,5 +355,4 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-
 })();

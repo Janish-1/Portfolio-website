@@ -1,0 +1,198 @@
+🪙 Bitcoin Watcher – Lightweight Crypto Price Tracker
+Tech Stack: Django · SQLite3 · HTML/CSS/JS (Frontend)
+
+A minimalist cryptocurrency price tracking web app that eliminates the complexity of bulky crypto platforms. Designed for users who want to quickly view live Bitcoin prices without signing up or sharing personal data.
+
+Supports both guest and login access for flexibility
+
+Focused on live BTC price updates using external APIs
+
+No data storage for guest users, ensuring lightweight usage
+
+Future roadmap includes graphical tracking of price history and crypto purchasing via wallet linking
+
+Ideal for users who just want to watch the markets, not manage portfolios
+
+Project Status: In Development
+
+
+
+
+🧩 HTML Cloner – Full Webpage Snapshot Extension
+Tech Stack: Plain JavaScript · Browser Extension APIs
+
+A cross-compatible browser extension that allows developers and designers to instantly clone any webpage, capturing the full HTML structure along with all associated assets (images, styles, fonts).
+
+Works on Firefox and designed to support Chrome (publishing pending store account)
+
+Saves the entire webpage as a local downloadable HTML file
+
+Captures everything—from layout and content to linked images and stylesheets
+
+Built with plain JS for fast performance and simplicity
+
+Ideal for developers, UI enthusiasts, or anyone wanting to preserve or inspect page components
+
+Available now on the Firefox Add-ons Store
+
+
+🧠 Fake News Detection – NLP-Based Classification App
+Tech Stack: Jupyter Notebook · Scikit-learn · Transformers (BERT) · Pandas · NLP
+
+A machine learning project that uses Natural Language Processing to identify fake news articles. Designed as a research-oriented prototype, the app processes preloaded headlines to determine their credibility.
+
+Built using a custom-trained Logistic Regression model alongside experimentation with BERT
+
+Trained on the Kaggle Fake News dataset with ~1,000 entries
+
+Full text preprocessing pipeline: tokenization, stopword removal, lemmatization, n-gram analysis
+
+Rapid and reliable predictions with a local-only Jupyter Notebook interface
+
+Great for experimentation and academic exploration of fake news patterns
+
+Project Status: Complete – Research Prototype
+
+
+
+🔌 Django API Framework – Token-Based REST Server
+Tech Stack: Django REST Framework · Python · Postman
+
+A reusable API backend built with Django REST Framework, designed for fast setup of token-authenticated, RESTful applications. Ideal for devs who need a secure and clean foundation to build scalable APIs.
+
+Includes a full set of CRUD endpoints, covered in a structured Postman collection
+
+Uses token-based authentication (no roles or RBAC for simplicity)
+
+Implements rate limiting and throttling for basic protection and performance tuning
+
+Lightweight and modular—easily adaptable to any project needing a Django backend
+
+Runs locally as a base API server, ideal for microservice-style development
+
+Project Status: Complete – Ready for reuse
+
+
+
+✈️ Travel Expense Calculator – Voice-Powered Budgeting Tool
+Tech Stack: Django · SQLite3 · HTML/CSS · JavaScript
+
+A simple and efficient web app designed to help users estimate their travel costs in INR. The tool uses voice input to capture distance and destination, making it fast and hands-free to use.
+
+Built with Django and SQLite3 for lightweight server-side processing
+
+Accepts voice-recognized input for distance and destination fields
+
+Calculates cost using a fixed-rate model in INR (Indian currency)
+
+Currently a prototype—no data storage or map integration yet
+
+Ideal as a base utility for future development into a full travel planning tool
+
+Project Status: Prototype – Functional with voice input
+
+
+
+
+🎮 Node.js Game Framework – Backend API for Multiplayer Games
+Tech Stack: Node.js · Express · MongoDB (optional)
+
+A backend framework designed to manage the mechanics of board games or games with rounds, score tracking, and prize distribution. It is built to handle multiplayer gameplay through a powerful API, making it easy to integrate with any frontend or game system.
+
+Supports game status updates, user management, and score submission
+
+Handles real-time interactions between players, thanks to its API-first design
+
+Ideal for turn-based board games, tournaments, and other round-based competitions
+
+Purely backend—can be used as the foundation for various games requiring score tracking and player management
+
+Project Status: Complete – Ready for use
+
+
+
+🛍️ Freecom – NLP-Based Product Guidance & Discount Code Redemption
+Tech Stack: Python · NLP (spaCy, NLTK) · Web Scraping · Django
+
+Freecom is an innovative web app designed to help users find the best-reviewed products and redeem discount codes for them. By leveraging Natural Language Processing (NLP), it analyzes product reviews and guides users to the most highly-rated items.
+
+NLP-based product guidance: Recommends the best products based on user preferences and reviews
+
+Discount code integration: Automatically scrapes and provides users with external links to product discount codes
+
+Built with a simple web interface for easy user interaction
+
+While the product recommendation feature is functional, the discount code feature is still in its early stages and currently provides external links
+
+Project Status: Complete – No further development planned
+
+
+
+📰 News Scraping Jupyter Notebook – Scraping Indian Express News
+Tech Stack: Python · BeautifulSoup · Pandas
+
+A research-focused project that scrapes all the latest news articles from Indian Express using BeautifulSoup for parsing HTML and Pandas for handling and storing data. This project is designed for collecting news data to be analyzed or processed later.
+
+Scrapes news from all sections of Indian Express, capturing headlines, articles, and metadata
+
+Uses Pandas to store the data in structured formats (e.g., CSV) for later analysis or reporting
+
+Currently manual scraping, with potential for automation in the future for daily updates
+
+Perfect for anyone looking to collect news data for further NLP or trend analysis research
+
+Project Status: Working – Manual Scraping
+
+
+
+🐧 WIP Linux Distro – Lightweight Custom Distro for Developers & Enthusiasts
+Tech Stack: Custom Bash Scripts · CLI Tools · Package Manager (Yum, Pacman Compatible)
+
+A personal project aiming to build a lightweight Linux distro with a custom CLI and package manager. While it's currently in the early development phase, the goal is to create a powerful, resource-efficient Linux environment that's tailor-made for developers, enthusiasts, and potentially millions of users in the future.
+
+Custom CLI tools for developer-centric workflows
+
+Package manager with compatibility for Yum and Pacman, allowing easier access to a wide variety of software
+
+Aiming to integrate Windows compatibility for running apps across platforms
+
+Learning project with long-term goals, including creating a full-fledged product for widespread use
+
+Currently in code form with no bootable or installable version yet, but the foundation is laid for future growth
+
+Project Status: Early Development – Future Goal to Scale
+
+
+
+📊 Kaggle Competition Entries – Exploring Machine Learning Algorithms
+Tech Stack: Python · Scikit-Learn · Pandas
+
+A series of entries into basic Kaggle competitions, focusing on learning and applying machine learning algorithms to solve real-world data problems. I’ve worked with linear regression, logistic regression, and basic data preprocessing techniques to improve model accuracy and prepare data for analysis.
+
+Focused on learning and experimenting with basic ML algorithms
+
+Emphasized data preprocessing as a crucial step in model performance
+
+No notable rankings yet, but valuable for hands-on learning and skill development
+
+Aimed at exploring different problems and enhancing my machine learning knowledge
+
+Project Status: Completed – Ongoing Learning
+
+
+
+💻 VSCode Extension Packs – Developer Productivity Tools
+Tech Stack: JavaScript · VSCode API · TypeScript
+
+A curated collection of VSCode extension packs designed to enhance developer productivity. Each pack is tailored to a specific domain, including frontend and backend development, providing essential tools and utilities for developers to streamline their workflow.
+
+Includes frontend and backend development tools, such as linters, debuggers, and language support
+
+Aimed at boosting developer productivity through customized extensions
+
+Extensions are published and available on the VSCode Marketplace for easy installation
+
+Project Status: Published – Available on VSCode Marketplace
+
+
+
