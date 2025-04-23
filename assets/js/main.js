@@ -374,7 +374,7 @@
 
         if (project) {
             // Set image
-            document.querySelector(".swiper-slide img").src = project.image;
+            document.querySelector(".swiper-slide img").src = '../' +  project.image;
 
             // Set project info
             const infoList = document.querySelector(".portfolio-info ul");
