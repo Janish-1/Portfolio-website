@@ -374,7 +374,7 @@
 
         if (project) {
             // Set image
-            document.querySelector(".swiper-slide img").src = '../' +  project.image;
+            document.querySelector(".swiper-slide img").src = '../' + project.image;
 
             // Set project info
             const infoList = document.querySelector(".portfolio-info ul");
@@ -597,20 +597,17 @@
 
             projectElement.innerHTML = `
         <div class="portfolio-content h-100">
-          <img src="${project.image}" class="img-fluid" alt="${
-                project.title
-            }" />
+          <img src="${project.image}" class="img-fluid" alt="${project.title
+                }" />
           <div class="portfolio-info">
             <h4>${project.title}</h4>
             <p>${project.description}</p>
-            <a href="${project.image}" title="${
-                project.title
-            }" data-gallery="portfolio-gallery-${project.type.toLowerCase()}" class="glightbox preview-link">
+            <a href="${project.image}" title="${project.title
+                }" data-gallery="portfolio-gallery-${project.type.toLowerCase()}" class="glightbox preview-link">
               <i class="bi bi-zoom-in"></i>
             </a>
-            <a href="${
-                project.detailsLink
-            }" title="More Details" class="details-link">
+            <a href="${project.detailsLink
+                }" title="More Details" class="details-link">
               <i class="bi bi-link-45deg"></i>
             </a>
           </div>
@@ -689,4 +686,35 @@
     }
     window.addEventListener("load", navmenuScrollspy);
     document.addEventListener("scroll", navmenuScrollspy);
+})();
+
+(function () {
+    // Set your professional start date (YYYY, MM - 1, DD)
+    const startDate = new Date(2023, 10, 1); // Nov 1, 2023
+    const now = new Date();
+
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    let experienceText = "";
+
+    if (years > 0) {
+        experienceText += years + " year" + (years > 1 ? "s" : "");
+    }
+
+    if (months > 0) {
+        experienceText += (years > 0 ? " " : "") +
+            months + " month" + (months > 1 ? "s" : "");
+    }
+
+    if (!experienceText) {
+        experienceText = "less than a month";
+    }
+
+    document.getElementById("experience-duration").textContent = experienceText;
 })();
