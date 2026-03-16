@@ -396,6 +396,245 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Work With Me Section
+--------------------------------------------------------------*/
+.work-with-me-section {
+  background: var(--surface-color);
+  padding: 80px 0;
+}
+
+.work-with-me-section .section-title p {
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.work-card {
+  background: var(--card-bg, #fff);
+  border-radius: 16px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.work-card .card-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: #fff;
+  font-size: 28px;
+}
+
+.work-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+}
+
+.work-card .card-description {
+  color: var(--default-color);
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.work-card .card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.work-card .card-features li {
+  color: var(--default-color);
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.work-card .card-features li i {
+  color: var(--accent-color);
+  font-size: 14px;
+}
+
+.work-card .project-starting {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.work-card .card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.work-card .card-buttons.support-buttons {
+  gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-color-hover, #0ea5e9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-outline:hover {
+  background: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-support {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.btn-support:hover {
+  background: var(--accent-color-hover, #0ea5e9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.support-message {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--default-color);
+  font-size: 16px;
+}
+
+.support-message p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .work-with-me-section {
+    padding: 50px 0;
+  }
+  
+  .work-card {
+    padding: 28px;
+  }
+  
+  .work-card h3 {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Resume Download Button
+--------------------------------------------------------------*/
+.resume-title-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.resume-title-wrapper h2 {
+  margin-bottom: 0;
+}
+
+.resume-download-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.resume-download-link:hover {
+  background: transparent;
+  color: var(--accent-color);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.resume-download-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+}
+
+.resume-download-btn:hover {
+  background: transparent;
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.resume-download-btn i {
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
