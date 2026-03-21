@@ -362,6 +362,222 @@
           </p>
         `,
         },
+        {
+            title: "POS & CRM System",
+            type: "Professional",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "Order management, inventory tracking, and daily transaction reporting for a food chain operation.",
+            image: "",
+            placeholderColor: "#E1F5EE",
+            id: "pos-crm",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["Laravel", "MySQL", "jQuery", "Bootstrap"],
+            detail_title: "POS & CRM System – Fovty Solutions",
+            detail_description: `
+          <p>
+            Order management, inventory tracking, and daily transaction reporting for a food chain operation. Handles catering orders, staff workflows, and live inventory.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Laravel · MySQL · jQuery · Bootstrap<br>
+            <strong>Company:</strong> Fovty Solutions<br>
+            <strong>Project Status:</strong> Private – NDA Protected
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
+        {
+            title: "Law Firm Management System",
+            type: "Professional",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "Case tracking, document storage, and client communication portal for a legal services firm.",
+            image: "",
+            placeholderColor: "#E6F1FB",
+            id: "law-firm",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["Laravel", "MySQL", "REST API", "Bootstrap"],
+            detail_title: "Law Firm Management System – Fovty Solutions",
+            detail_description: `
+          <p>
+            Case tracking, document storage, and client communication portal for a legal services firm. Role-based access for lawyers and admin staff.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Laravel · MySQL · REST API · Bootstrap<br>
+            <strong>Company:</strong> Fovty Solutions<br>
+            <strong>Project Status:</strong> Private – NDA Protected
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
+        {
+            title: "Shipment Tracking CRM",
+            type: "Professional",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "Real-time parcel tracking integrated with logistics APIs.",
+            image: "",
+            placeholderColor: "#FAEEDA",
+            id: "shipment-tracking",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["Laravel", "External APIs", "AJAX", "MySQL"],
+            detail_title: "Shipment Tracking CRM – Fovty Solutions",
+            detail_description: `
+          <p>
+            Real-time parcel tracking integrated with logistics APIs. Automated invoice generation and live status updates for clients.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Laravel · External APIs · AJAX · MySQL<br>
+            <strong>Company:</strong> Fovty Solutions<br>
+            <strong>Project Status:</strong> Private – NDA Protected
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
+        {
+            title: "Leads & CRM Automation",
+            type: "Professional",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "Extended Prefex CRM with automated lead assignment and follow-up reminders.",
+            image: "",
+            placeholderColor: "#EEEDFE",
+            id: "leads-crm",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["Laravel", "PHP", "AJAX", "MySQL"],
+            detail_title: "Leads & CRM Automation – Fovty Solutions",
+            detail_description: `
+          <p>
+            Extended Prefex CRM with automated lead assignment, follow-up reminders, and a site operations manager for field staff scheduling and role-based permissions.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Laravel · PHP · AJAX · MySQL<br>
+            <strong>Company:</strong> Fovty Solutions<br>
+            <strong>Project Status:</strong> Private – NDA Protected
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
+        {
+            title: "Business Idea Marketplace",
+            type: "Professional",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "Platform to list, browse, and purchase startup concepts.",
+            image: "",
+            placeholderColor: "#E1F5EE",
+            id: "idea-marketplace",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["Node.js", "React", "MongoDB", "Stripe API"],
+            detail_title: "Business Idea Marketplace – Fovty Solutions",
+            detail_description: `
+          <p>
+            Platform to list, browse, and purchase startup concepts. Secure Stripe checkout, seller dashboards, and admin moderation workflows.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Node.js · React · MongoDB · Stripe API<br>
+            <strong>Company:</strong> Fovty Solutions<br>
+            <strong>Project Status:</strong> Private – NDA Protected
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
+        {
+            title: "AI Career Platform",
+            type: "Professional",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "AI-powered resume builder, LinkedIn profile optimizer, and job application tracker.",
+            image: "",
+            placeholderColor: "#EEEDFE",
+            id: "ai-career",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["Node.js", "React", "OpenAI API", "MongoDB", "Python"],
+            detail_title: "AI Career Platform – Fovty Solutions",
+            detail_description: `
+          <p>
+            AI-powered resume builder, LinkedIn profile optimizer, headshot generation, and job application tracker — all in one platform.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Node.js · React · OpenAI API · MongoDB · Python<br>
+            <strong>Company:</strong> Fovty Solutions<br>
+            <strong>Project Status:</strong> Private – NDA Protected
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
+        {
+            title: "LinkedIn Automation Extension",
+            type: "Professional",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "Chrome extension for recruiters that extracts professional profile data.",
+            image: "",
+            placeholderColor: "#EEEDFE",
+            id: "linkedin-automation",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["JavaScript", "Puppeteer", "Python", "Chrome API"],
+            detail_title: "LinkedIn Automation Extension – Fovty Solutions",
+            detail_description: `
+          <p>
+            Chrome extension for recruiters that extracts professional profile data and automates connection and outreach workflows.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> JavaScript · Puppeteer · Python · Chrome API<br>
+            <strong>Company:</strong> Fovty Solutions<br>
+            <strong>Project Status:</strong> Private – NDA Protected
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
+        {
+            title: "Recommendation System",
+            type: "Professional",
+            client: "Allsoft Solutions (Intern)",
+            project_link: "#",
+            description: "Collaborative filtering recommendation engine built during internship.",
+            image: "",
+            placeholderColor: "#EAF3DE",
+            id: "recommendation-system",
+            detailsLink: "#",
+            filterClass: "filter-professional",
+            techStack: ["Python", "Flask", "Scikit-learn", "Pandas"],
+            detail_title: "Recommendation System – Allsoft Solutions (Intern)",
+            detail_description: `
+          <p>
+            Collaborative filtering recommendation engine built during internship. Includes data preprocessing pipeline and model accuracy optimization.
+          </p>
+          <p>
+            <strong>Tech Stack:</strong> Python · Flask · Scikit-learn · Pandas<br>
+            <strong>Company:</strong> Allsoft Solutions (Intern)<br>
+            <strong>Project Status:</strong> Private
+          </p>
+          <p class="text-muted">
+            <em>Private — no live demo available</em>
+          </p>
+        `,
+        },
     ];
 
     // Portfolio Details
@@ -595,27 +811,63 @@
                 project.filterClass
             );
 
-            projectElement.innerHTML = `
+            // Check if this is a professional project with placeholder
+            if (project.placeholderColor) {
+                // Get SVG icon based on project type
+                let svgIcon = getProjectIcon(project.id);
+                let badgeHtml = project.badge ? `<span class="badge ${project.badgeClass}">${project.badge}</span>` : '';
+                let techStackHtml = project.techStack ? project.techStack.join(' · ') : '';
+                
+                projectElement.innerHTML = `
         <div class="portfolio-content h-100">
-          <img src="${project.image}" class="img-fluid" alt="${project.title
-                }" />
+          <div class="portfolio-placeholder" style="background: ${project.placeholderColor}; height: 200px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+            ${svgIcon}
+          </div>
           <div class="portfolio-info">
             <h4>${project.title}</h4>
-            <p>${project.description}</p>
-            <a href="${project.image}" title="${project.title
-                }" data-gallery="portfolio-gallery-${project.type.toLowerCase()}" class="glightbox preview-link">
-              <i class="bi bi-zoom-in"></i>
-            </a>
-            <a href="${project.detailsLink
-                }" title="More Details" class="details-link">
+            <p>${techStackHtml}</p>
+            ${badgeHtml}
+            <a href="#" title="More Details" data-bs-toggle="modal" data-bs-target="#project-${project.id}" class="details-link">
               <i class="bi bi-link-45deg"></i>
             </a>
           </div>
         </div>
       `;
+            } else {
+                projectElement.innerHTML = `
+        <div class="portfolio-content h-100">
+          <img src="${project.image}" class="img-fluid" alt="${project.title}" />
+          <div class="portfolio-info">
+            <h4>${project.title}</h4>
+            <p>${project.description}</p>
+            <a href="${project.image}" title="${project.title}" data-gallery="portfolio-gallery-${project.type.toLowerCase()}" class="glightbox preview-link">
+              <i class="bi bi-zoom-in"></i>
+            </a>
+            <a href="${project.detailsLink}" title="More Details" class="details-link">
+              <i class="bi bi-link-45deg"></i>
+            </a>
+          </div>
+        </div>
+      `;
+            }
 
             container.appendChild(projectElement);
         });
+    }
+
+    // Function to get SVG icon based on project
+    function getProjectIcon(projectId) {
+        const icons = {
+            'pos-crm': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>',
+            'law-firm': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>',
+            'shipment-tracking': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F57C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>',
+            'leads-crm': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B1FA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
+            'idea-marketplace': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>',
+            'ai-career': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B1FA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"></path><path d="M12 12l8-8"></path><circle cx="12" cy="12" r="3"></circle></svg>',
+            'linkedin-automation': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B1FA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>',
+            'recommendation-system': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#558B2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>'
+        };
+        return icons[projectId] || '<i class="bi bi-folder" style="font-size: 2rem;"></i>';
     }
 
     /**
