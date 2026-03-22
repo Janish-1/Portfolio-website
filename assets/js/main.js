@@ -377,7 +377,18 @@
             detail_title: "POS & CRM System – Fovty Solutions",
             detail_description: `
           <p>
-            Order management, inventory tracking, and daily transaction reporting for a food chain operation. Handles catering orders, staff workflows, and live inventory.
+            A comprehensive point-of-sale and customer relationship management system designed for a food chain operation. This system handles order management, inventory tracking, and daily transaction reporting with real-time analytics.
+          </p>
+          <ul>
+            <li>🛒 <strong>Order Management:</strong> Streamlined POS interface for processing dine-in, takeout, and catering orders with split payment support</li>
+            <li>📦 <strong>Inventory Tracking:</strong> Real-time inventory updates with low-stock alerts and automated reordering suggestions</li>
+            <li>📊 <strong>Daily Reporting:</strong> Comprehensive sales reports, profit margin analysis, and staff performance metrics</li>
+            <li>👨‍🍳 <strong>Staff Management:</strong> Role-based access for managers, cashiers, and kitchen staff with shift scheduling</li>
+            <li>📱 <strong>Catering Module:</strong> Special handling for bulk catering orders with advance booking and custom menu options</li>
+            <li>🔄 <strong>Data Sync:</strong> Multi-branch support with centralized database for chain-wide inventory and sales visibility</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Handling peak-hour concurrency while maintaining data integrity across multiple POS terminals.
           </p>
           <p>
             <strong>Tech Stack:</strong> Laravel · MySQL · jQuery · Bootstrap<br>
@@ -404,7 +415,19 @@
             detail_title: "Law Firm Management System – Fovty Solutions",
             detail_description: `
           <p>
-            Case tracking, document storage, and client communication portal for a legal services firm. Role-based access for lawyers and admin staff.
+            A comprehensive legal practice management system designed to streamline case management, document handling, and client communications for a legal services firm.
+          </p>
+          <ul>
+            <li>📁 <strong>Case Management:</strong> Complete case lifecycle tracking from initial consultation to case closure with milestone reminders</li>
+            <li>📄 <strong>Document Storage:</strong> Secure document management with version control, client-specific folders, and encrypted storage</li>
+            <li>💬 <strong>Client Portal:</strong> Secure communication channel for clients to view case status, download documents, and message their attorneys</li>
+            <li>👥 <strong>Role-Based Access:</strong> Granular permissions for partners, associates, paralegals, and administrative staff</li>
+            <li>📅 <strong>Calendar Integration:</strong> Court dates, client meetings, and filing deadlines with automatic reminders</li>
+            <li>💰 <strong>Billing Module:</strong> Time tracking, invoice generation, and payment processing for legal services</li>
+            <li>🔍 <strong>Search Functionality:</strong> Powerful full-text search across all cases and documents for quick information retrieval</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Implementing strict data privacy compliance while maintaining ease of access for authorized personnel.
           </p>
           <p>
             <strong>Tech Stack:</strong> Laravel · MySQL · REST API · Bootstrap<br>
@@ -431,7 +454,19 @@
             detail_title: "Shipment Tracking CRM – Fovty Solutions",
             detail_description: `
           <p>
-            Real-time parcel tracking integrated with logistics APIs. Automated invoice generation and live status updates for clients.
+            A comprehensive shipment tracking and logistics management system that provides real-time parcel tracking integrated with multiple logistics provider APIs.
+          </p>
+          <ul>
+            <li>📦 <strong>Multi-Carrier Integration:</strong> Unified tracking across major logistics providers with standardized status updates</li>
+            <li>🔄 <strong>Real-Time Updates:</strong> WebSocket-powered live tracking status updates without page refresh</li>
+            <li>📄 <strong>Automated Invoices:</strong> Dynamic invoice generation based on weight, distance, and service type with PDF export</li>
+            <li>📊 <strong>Analytics Dashboard:</strong> Delivery performance metrics, delay analysis, and customer satisfaction tracking</li>
+            <li>📧 <strong>Automated Notifications:</strong> Email and SMS alerts for shipment status changes at key milestones</li>
+            <li>🔗 <strong>API Gateway:</strong> RESTful API for third-party integrations and e-commerce platform connections</li>
+            <li>👤 <strong>Client Portal:</strong> Self-service tracking page for end customers with shipment history</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Handling inconsistent tracking data formats from multiple carrier APIs and normalizing them into a unified system.
           </p>
           <p>
             <strong>Tech Stack:</strong> Laravel · External APIs · AJAX · MySQL<br>
@@ -458,7 +493,19 @@
             detail_title: "Leads & CRM Automation – Fovty Solutions",
             detail_description: `
           <p>
-            Extended Prefex CRM with automated lead assignment, follow-up reminders, and a site operations manager for field staff scheduling and role-based permissions.
+            An enhanced version of the Prefex CRM system with intelligent automation features for lead management, follow-up workflows, and field operations coordination.
+          </p>
+          <ul>
+            <li>🎯 <strong>Smart Lead Assignment:</strong> Automated lead distribution based on territory, agent performance, and availability</li>
+            <li>⏰ <strong>Follow-Up Automation:</strong> Configurable reminder schedules with email and in-app notifications for missed follow-ups</li>
+            <li>📍 <strong>Site Operations Manager:</strong> Field staff scheduling with route optimization and visit verification</li>
+            <li>👷 <strong>Role-Based Permissions:</strong> Customizable access levels for managers, agents, and field staff</li>
+            <li>📈 <strong>Conversion Analytics:</strong> Lead-to-cash pipeline tracking with conversion rate insights</li>
+            <li>🔔 <strong>Escalation Engine:</strong> Automatic escalation of stale leads and overdue tasks to managers</li>
+            <li>📱 <strong>Mobile Optimization:</strong> Responsive interface for field agents to update leads on-the-go</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Building a flexible automation engine that could handle complex business rules while remaining user-configurable.
           </p>
           <p>
             <strong>Tech Stack:</strong> Laravel · PHP · AJAX · MySQL<br>
@@ -485,7 +532,20 @@
             detail_title: "Business Idea Marketplace – Fovty Solutions",
             detail_description: `
           <p>
-            Platform to list, browse, and purchase startup concepts. Secure Stripe checkout, seller dashboards, and admin moderation workflows.
+            A two-sided marketplace platform where entrepreneurs can list, browse, and purchase innovative startup concepts and business ideas.
+          </p>
+          <ul>
+            <li>🏪 <strong>Seller Dashboard:</strong> Complete workspace for sellers to create, manage, and update their idea listings</li>
+            <li>🛒 <strong>Browse & Search:</strong> Advanced filtering by industry, investment range, and business type</li>
+            <li>💳 <strong>Secure Payments:</strong> Full Stripe integration with checkout, subscriptions, and escrow support</li>
+            <li>📝 <strong>Idea Submissions:</strong> Structured submission forms with business model canvas and market analysis</li>
+            <li>🛡️ <strong>Admin Moderation:</strong> Content review workflow to ensure quality and prevent IP infringement</li>
+            <li>💬 <strong>Negotiation System:</strong> In-platform messaging and offer management for buyer-seller discussions</li>
+            <li>📊 <strong>Analytics:</strong> Platform-wide metrics for admin including GMV, active listings, and user engagement</li>
+            <li>🔐 <strong>IP Protection:</strong> Document watermarking and secure file sharing with NDA support</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Building trust between buyers and sellers while protecting intellectual property throughout the transaction.
           </p>
           <p>
             <strong>Tech Stack:</strong> Node.js · React · MongoDB · Stripe API<br>
@@ -512,7 +572,20 @@
             detail_title: "AI Career Platform – Fovty Solutions",
             detail_description: `
           <p>
-            AI-powered resume builder, LinkedIn profile optimizer, headshot generation, and job application tracker — all in one platform.
+            An all-in-one AI-powered career development platform that helps job seekers create professional resumes, optimize their LinkedIn presence, and track job applications.
+          </p>
+          <ul>
+            <li>📄 <strong>AI Resume Builder:</strong> Dynamic resume generation with multiple templates, keyword optimization, and ATS-friendly formatting</li>
+            <li>💼 <strong>LinkedIn Optimizer:</strong> AI analysis of profiles with suggestions for headline, summary, and experience sections</li>
+            <li>📸 <strong>Headshot Generation:</strong> AI-enhanced professional headshot creation from casual photos</li>
+            <li>📋 <strong>Application Tracker:</strong> Kanban-style pipeline for managing job applications with interview reminders</li>
+            <li>🤖 <strong>Cover Letter Generator:</strong> Custom cover letters tailored to each job description using LLM technology</li>
+            <li>📊 <strong>Interview Prep:</strong> AI-generated practice questions based on target role and company</li>
+            <li>🔔 <strong>Job Alerts:</strong> Personalized job notifications based on skills, location, and preferences</li>
+            <li>📈 <strong>Analytics Dashboard:</strong> Application metrics, response rates, and career progress tracking</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Integrating multiple AI services while maintaining fast response times and ensuring content quality.
           </p>
           <p>
             <strong>Tech Stack:</strong> Node.js · React · OpenAI API · MongoDB · Python<br>
@@ -539,7 +612,20 @@
             detail_title: "LinkedIn Automation Extension – Fovty Solutions",
             detail_description: `
           <p>
-            Chrome extension for recruiters that extracts professional profile data and automates connection and outreach workflows.
+            A powerful Chrome extension designed for recruiters to efficiently extract professional profile data and automate connection and outreach workflows on LinkedIn.
+          </p>
+          <ul>
+            <li>👤 <strong>Profile Extraction:</strong> One-click scraping of candidate profiles including work history, skills, and contact info</li>
+            <li>📊 <strong>Data Export:</strong> Export collected data to CSV, JSON, or directly to ATS integration</li>
+            <li>🤝 <strong>Auto-Connect:</strong> Personalized connection requests with template customization and follow-up sequences</li>
+            <li>💬 <strong>Outreach Automation:</strong> Automated messaging campaigns with personalization tokens</li>
+            <li>📅 <strong>Schedule Outreach:</strong> Time-optimized message delivery based on recipient timezone</li>
+            <li>📈 <strong>Engagement Tracking:</strong> Monitor connection acceptance rates and message responses</li>
+            <li>🛡️ <strong>Safety Features:</strong> Rate limiting, random delays, and session rotation to prevent account restrictions</li>
+            <li>🔐 <strong>Data Privacy:</strong> Local data storage with optional cloud sync and encryption</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Building reliable automation that works within LinkedIn's terms while providing meaningful productivity gains.
           </p>
           <p>
             <strong>Tech Stack:</strong> JavaScript · Puppeteer · Python · Chrome API<br>
@@ -566,7 +652,19 @@
             detail_title: "Recommendation System – Allsoft Solutions (Intern)",
             detail_description: `
           <p>
-            Collaborative filtering recommendation engine built during internship. Includes data preprocessing pipeline and model accuracy optimization.
+            A collaborative filtering-based recommendation engine developed during my internship, designed to analyze user behavior and provide personalized product suggestions.
+          </p>
+          <ul>
+            <li>🧠 <strong>ML Algorithm:</strong> Implemented user-based and item-based collaborative filtering for personalized recommendations</li>
+            <li>📊 <strong>Data Pipeline:</strong> End-to-end data preprocessing including cleaning, transformation, and feature engineering</li>
+            <li>🔧 <strong>Model Optimization:</strong> Hyperparameter tuning and cross-validation to improve recommendation accuracy</li>
+            <li>🌐 <strong>REST API:</strong> Flask-based API endpoints for real-time recommendation retrieval</li>
+            <li>📈 <strong>Performance Metrics:</strong> Evaluation using precision, recall, and F1-score for model validation</li>
+            <li>💾 <strong>Scalable Storage:</strong> Efficient data structures for handling large user-item matrices</li>
+            <li>🧪 <strong>A/B Testing Framework:</strong> Setup for testing recommendation quality with live user feedback</li>
+          </ul>
+          <p>
+            <strong>Key Challenge:</strong> Building a recommendation engine that could scale to thousands of users while maintaining real-time response times.
           </p>
           <p>
             <strong>Tech Stack:</strong> Python · Flask · Scikit-learn · Pandas<br>
