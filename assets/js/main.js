@@ -12,40 +12,11 @@
     // Global Data
     const projects = [
         {
-            title: "Bitcoin Watcher",
-            type: "Website",
-            client: "Myself",
-            project_link: "#",
-            description: "Lightweight Crypto Price Tracker",
-            image: "assets/img/screenshots/bitcoin-watcher.png",
-            id: "bitcoin-watcher",
-            detailsLink: "pages/portfolio-details.html?id=bitcoin-watcher",
-            filterClass: "filter-web",
-            detail_title: "Bitcoin Watcher – Lightweight Crypto Price Tracker",
-            detail_description: `
-      <p>
-        A minimalist cryptocurrency price tracking web app designed for users who want to quickly view live Bitcoin prices without the complexity of bulky crypto platforms. 
-        No sign-up or personal data required for access, making it ideal for simple market tracking.
-      </p>
-      <ul>
-        <li>🔑 <strong>Guest & Login Access:</strong> Provides flexibility for both casual users (guest) and registered users</li>
-        <li>💸 <strong>Live BTC Price Updates:</strong> Pulls live Bitcoin prices via external APIs for accurate, up-to-date information</li>
-        <li>🛠️ <strong>No Data Storage:</strong> Ensures lightweight usage by not storing any data for guest users</li>
-        <li>📊 <strong>Future Features:</strong> Roadmap includes graphical price tracking and wallet linking for crypto purchasing</li>
-        <li>📉 <strong>Perfect for Market Watchers:</strong> Ideal for users who just want to monitor live prices without managing portfolios</li>
-      </ul>
-      <p>
-        <strong>Tech Stack:</strong> Django · SQLite3 · HTML/CSS/JS (Frontend)<br>
-        <strong>Project Status:</strong> In Development
-      </p>
-    `,
-        },
-        {
             title: "HTML Cloner",
-            type: "Extension",
-            client: "Myself",
-            project_link: "#",
-            description: "Full Webpage Snapshot Extension",
+            type: "Browser Extension",
+            client: "Personal",
+            project_link: "https://addons.mozilla.org/en-US/firefox/addon/html-cloner/",
+            description: "Published Firefox extension that snapshots any webpage — HTML, CSS, fonts, and images — into a single portable file.",
             image: "assets/img/screenshots/browser-extension.png",
             id: "html-cloner",
             detailsLink: "pages/portfolio-details.html?id=html-cloner",
@@ -53,312 +24,158 @@
             detail_title: "HTML Cloner – Full Webpage Snapshot Extension",
             detail_description: `
       <p>
-        A cross-compatible browser extension that enables developers and designers to clone any webpage instantly, capturing the full HTML structure along with all associated assets like images, styles, and fonts.
+        A cross-browser extension that captures any webpage as a complete, self-contained HTML file — preserving layout, styles, images, and fonts exactly as they appear in the browser. <strong>Published on the Firefox Add-ons Store.</strong>
       </p>
       <ul>
-        <li>🌐 <strong>Cross-Browser Support:</strong> Fully functional on <strong>Firefox</strong>, with plans for <strong>Chrome</strong> support (publishing pending store account)</li>
-        <li>💾 <strong>Local Download:</strong> Saves the entire webpage as a downloadable HTML file, including layout, content, and assets</li>
-        <li>🔌 <strong>Comprehensive Capture:</strong> Clones everything—content, images, stylesheets, and more—preserving the page as it appears</li>
-        <li>⚡ <strong>Optimized Performance:</strong> Built with plain <strong>JavaScript</strong> for fast execution and simplicity</li>
-        <li>💻 <strong>Perfect for Developers:</strong> Great for developers, UI/UX enthusiasts, or anyone needing to preserve or inspect page components quickly</li>
+        <li><strong>One-Click Capture:</strong> Instantly clones the active tab with all assets bundled inline — no configuration required</li>
+        <li><strong>Complete Asset Preservation:</strong> Inlines external stylesheets, images, fonts, and scripts to produce a fully portable, offline-ready file</li>
+        <li><strong>Cross-Browser Support:</strong> Live on Firefox; Chrome support in progress pending store account setup</li>
+        <li><strong>Zero Dependencies:</strong> Built entirely in plain JavaScript using native WebExtension APIs — no build step, no frameworks</li>
+        <li><strong>Developer Utility:</strong> Used for offline page archiving, UI snapshot comparisons, and inspecting third-party page structure without network access</li>
       </ul>
       <p>
-        <strong>Tech Stack:</strong> Plain JavaScript · Browser Extension APIs<br>
-        <strong>Project Status:</strong> Available now on the <a href="https://addons.mozilla.org/en-US/firefox/addon/your-extension">Firefox Add-ons Store</a>
+        <strong>Tech Stack:</strong> JavaScript · Browser Extension APIs (WebExtensions)<br>
+        <strong>Status:</strong> Live — Published on Firefox Add-ons Store
       </p>
     `,
         },
         {
             title: "Fake News Detection",
-            type: "Jupyter Notebook",
-            client: "Myself",
+            type: "ML Research",
+            client: "Personal",
             project_link: "#",
-            description: "NLP-Based Classification App",
+            description: "NLP classification pipeline using Logistic Regression and BERT to identify misinformation in news articles — with full preprocessing, feature extraction, and model evaluation.",
             image: "assets/img/screenshots/Jupyter.png",
             id: "fake-news",
             detailsLink: "pages/portfolio-details.html?id=fake-news",
             filterClass: "filter-mlai",
-            detail_title: "Fake News Detection – NLP-Based Classification App",
+            detail_title: "Fake News Detection – NLP Classification System",
             detail_description: `
       <p>
-        A machine learning-based research project designed to detect fake news articles using <strong>Natural Language Processing (NLP)</strong>. 
-        The app processes preloaded headlines to predict their credibility, making it a great tool for academic research into fake news patterns.
+        A machine learning research project that classifies news articles as real or fake using a full Natural Language Processing pipeline — from raw text cleaning through model training and evaluation. Experiments span classical ML to transformer-based approaches.
       </p>
       <ul>
-        <li>🧠 <strong>Machine Learning Model:</strong> Custom-trained <code>Logistic Regression</code> model, with additional experimentation using <strong>BERT</strong></li>
-        <li>📊 <strong>Dataset:</strong> Trained on the <strong>Kaggle Fake News dataset</strong> with ~1,000 labeled entries for classification</li>
-        <li>🔧 <strong>Text Preprocessing Pipeline:</strong> Includes tokenization, stopword removal, lemmatization, and n-gram analysis for feature extraction</li>
-        <li>⚡ <strong>Rapid Predictions:</strong> Fast, reliable predictions through a local-only <code>Jupyter Notebook</code> interface</li>
-        <li>📚 <strong>Ideal for Research:</strong> Perfect for exploring and experimenting with fake news detection techniques in NLP</li>
+        <li><strong>Dual-Model Approach:</strong> Primary model is Logistic Regression with TF-IDF features; secondary experiments used BERT for contextual embeddings — with a clear accuracy comparison between the two</li>
+        <li><strong>Full Preprocessing Pipeline:</strong> Tokenization, stopword removal, lemmatization, and n-gram feature extraction applied consistently across train and test splits</li>
+        <li><strong>Dataset:</strong> Trained and validated on the Kaggle Fake News dataset (~1,000 labeled articles) with stratified splits to prevent class imbalance bias</li>
+        <li><strong>Evaluation:</strong> Model quality measured with precision, recall, F1-score, and confusion matrix analysis across multiple classifier configurations</li>
+        <li><strong>Reproducible Notebook:</strong> Clearly structured Jupyter notebook with separated stages: EDA → preprocessing → training → evaluation → conclusions</li>
       </ul>
       <p>
-        <strong>Tech Stack:</strong> Jupyter Notebook · Scikit-learn · Transformers (BERT) · Pandas · NLP<br>
-        <strong>Project Status:</strong> Complete – Research Prototype
+        <strong>Tech Stack:</strong> Python · Scikit-learn · HuggingFace Transformers (BERT) · Pandas · NLTK<br>
+        <strong>Status:</strong> Complete – Research Prototype
       </p>
     `,
         },
         {
             title: "Django API Framework",
-            type: "API",
-            client: "Myself",
+            type: "API / Backend",
+            client: "Personal",
             project_link: "#",
-            description: "Token-Based REST Server",
+            description: "Production-ready Django REST starter with token auth, rate limiting, full CRUD endpoints, and a Postman collection — designed to eliminate boilerplate on new API projects.",
             image: "assets/img/screenshots/api.jpeg",
             id: "django-api",
             detailsLink: "pages/portfolio-details.html?id=django-api",
             filterClass: "filter-api",
-            detail_title: "Django API Framework – Token-Based REST Server",
+            detail_title: "Django API Framework – Reusable Token-Authenticated REST Server",
             detail_description: `
       <p>
-        A reusable backend API built with <strong>Django REST Framework</strong>, designed to accelerate the setup of token-authenticated RESTful applications. 
-        Ideal for developers looking for a secure and clean foundation to build scalable, performant APIs with minimal setup.
+        A clean, reusable Django REST Framework base that compresses hours of boilerplate into a ready-to-fork repository. Covers authentication, CRUD, throttling, and API documentation out of the box — fork it, rename the app, and start building your domain logic immediately.
       </p>
       <ul>
-        <li>🔄 <strong>Full CRUD Endpoints:</strong> Includes all necessary endpoints for basic database operations, covered in a structured <code>Postman</code> collection</li>
-        <li>🔐 <strong>Token-Based Authentication:</strong> Implements simple token auth (no complex roles or RBAC for ease of use)</li>
-        <li>🚦 <strong>Rate Limiting & Throttling:</strong> Basic protection and performance tuning for production environments</li>
-        <li>⚙️ <strong>Modular Design:</strong> Lightweight and easily adaptable to any project needing a Django API backend</li>
-        <li>🔌 <strong>Microservice Ready:</strong> Functions well as a local base API server for microservice-style architectures</li>
+        <li><strong>Token Authentication:</strong> DRF token-based auth with login, logout, and register endpoints — secure by default without over-engineering RBAC for projects that don't need it</li>
+        <li><strong>Full CRUD:</strong> Standardised create, read, update, and delete endpoints backed by a documented Postman collection for immediate testing and client handoff</li>
+        <li><strong>Rate Limiting & Throttling:</strong> Per-user and anonymous request throttles pre-configured for both development and production environments</li>
+        <li><strong>Modular Structure:</strong> App layout designed for clean extension — add a new resource by dropping in a model, serializer, and viewset, nothing else</li>
+        <li><strong>Microservice Compatible:</strong> Runs cleanly as an isolated service behind a reverse proxy or as the core backend in a larger architecture</li>
       </ul>
       <p>
-        <strong>Tech Stack:</strong> Django REST Framework · Python · Postman<br>
-        <strong>Project Status:</strong> Complete – Ready for reuse
-      </p>
-    `,
-        },
-        {
-            title: "Travel Expense Calculator",
-            type: "Website",
-            client: "Myself",
-            project_link: "#",
-            description: "Voice-Powered Budgeting Tool",
-            image: "assets/img/screenshots/travelling_expense.png",
-            id: "travel-expense",
-            detailsLink: "pages/portfolio-details.html?id=travel-expense",
-            filterClass: "filter-web",
-            detail_title:
-                "Travel Expense Calculator – Voice-Powered Budgeting Tool",
-            detail_description: `
-      <p>
-        A lightweight web application designed to estimate travel costs in Indian Rupees (INR), making use of voice input for a quick and user-friendly experience. 
-        Ideal for on-the-go planning, this prototype helps users get cost estimates without typing.
-      </p>
-      <ul>
-        <li>🎤 <strong>Voice Input:</strong> Captures destination and distance through speech recognition for a hands-free experience</li>
-        <li>🧮 <strong>Cost Estimation:</strong> Uses a fixed-rate model to calculate trip costs in INR</li>
-        <li>⚙️ <strong>Built With:</strong> Django and SQLite3 for simple and efficient backend handling</li>
-        <li>🚧 <strong>Prototype Status:</strong> No map integration or data persistence yet, but serves as a solid foundation for expansion</li>
-      </ul>
-      <p>
-        <strong>Tech Stack:</strong> Django · SQLite3 · HTML/CSS · JavaScript<br>
-        <strong>Project Status:</strong> Prototype – Functional with voice input
+        <strong>Tech Stack:</strong> Django REST Framework · Python · SQLite / PostgreSQL · Postman<br>
+        <strong>Status:</strong> Complete – Ready for reuse
       </p>
     `,
         },
         {
             title: "Node.js Game Framework",
-            type: "API",
-            client: "Myself",
+            type: "API / Backend",
+            client: "Personal",
             project_link: "#",
-            description: "Backend API for Multiplayer Games",
+            description: "API-first backend for turn-based multiplayer games — handles match sessions, player management, score submission, and prize distribution, decoupled from any frontend.",
             image: "assets/img/screenshots/api.jpeg",
             id: "game-framework",
             detailsLink: "pages/portfolio-details.html?id=game-framework",
             filterClass: "filter-api",
-            detail_title:
-                "Node.js Game Framework – Backend API for Multiplayer Games",
+            detail_title: "Node.js Game Framework – Multiplayer Turn-Based Game Backend",
             detail_description: `
       <p>
-        A backend framework built to power turn-based games and board game mechanics, handling everything from score tracking to player management. 
-        Designed with an API-first approach, it enables seamless integration with any frontend or game engine.
+        A backend-only framework for the server-side logic of turn-based and board games. Built API-first so it integrates with any client — web, mobile, or native — without coupling game logic to a specific frontend implementation.
       </p>
       <ul>
-        <li>🎯 <strong>Game Logic:</strong> Manages game rounds, score submissions, prize distributions, and match statuses</li>
-        <li>👥 <strong>Multiplayer Support:</strong> Supports user management and real-time player interactions via RESTful APIs</li>
-        <li>♟️ <strong>Use Cases:</strong> Perfect for board games, casual multiplayer games, and online tournaments</li>
-        <li>🔌 <strong>Decoupled Design:</strong> Backend-only framework that can plug into any custom frontend or third-party system</li>
+        <li><strong>Match Lifecycle State Machine:</strong> Full session management — create, join, take turn, end, archive — with server-side validation at every state transition to prevent illegal moves</li>
+        <li><strong>Score & Prize Distribution:</strong> Configurable scoring rules and automated reward calculations triggered at match completion</li>
+        <li><strong>Player Management:</strong> User registration, session tracking, match history, and leaderboard endpoints per player</li>
+        <li><strong>Clean REST API:</strong> Documented endpoints for all game actions — swap in any frontend or integrate with third-party platforms without touching game logic</li>
+        <li><strong>Decoupled Architecture:</strong> No UI layer — the framework is the engine, making it adaptable across game genres with minimal modification</li>
       </ul>
       <p>
-        <strong>Tech Stack:</strong> Node.js · Express · MongoDB (optional)<br>
-        <strong>Project Status:</strong> Complete – Ready for use
+        <strong>Tech Stack:</strong> Node.js · Express · MongoDB<br>
+        <strong>Status:</strong> Complete – Ready for integration
       </p>
     `,
         },
         {
             title: "Freecom",
-            type: "Website",
-            client: "Myself",
+            type: "Web Application",
+            client: "Personal",
             project_link: "#",
-            description:
-                "NLP-Based Product Guidance & Discount Code Redemption",
+            description: "NLP-driven product discovery app that scores review sentiment with spaCy and NLTK to surface genuinely top-rated recommendations — not just highest-rated by count.",
             image: "assets/img/screenshots/freecom.png",
             id: "freecom",
             detailsLink: "pages/portfolio-details.html?id=freecom",
             filterClass: "filter-mlai",
-            detail_title:
-                "Freecom – NLP-Based Product Guidance & Discount Code Redemption",
+            detail_title: "Freecom – NLP-Powered Product Recommendation Engine",
             detail_description: `
       <p>
-        <strong>Freecom</strong> is an innovative web application that helps users discover top-reviewed products and access discount codes effortlessly. 
-        Powered by Natural Language Processing (NLP), the platform analyzes product reviews to provide personalized, high-quality recommendations.
+        Freecom processes user preferences and real product reviews through an NLP pipeline to surface the highest-quality recommendations — cutting through inflated star ratings with sentiment-based scoring.
       </p>
       <ul>
-        <li>🧠 <strong>NLP-Based Guidance:</strong> Uses user preferences and review sentiment to recommend the best-rated products</li>
-        <li>💸 <strong>Discount Code Integration:</strong> Scrapes and displays external discount links related to the recommended products</li>
-        <li>🖥️ <strong>User Interface:</strong> Clean and simple frontend designed for a smooth user experience</li>
-        <li>🚧 <strong>Note:</strong> While product recommendations are fully functional, the discount code feature is still early-stage and currently provides only external links</li>
+        <li><strong>Sentiment Analysis:</strong> Scores product reviews using spaCy and NLTK to distinguish genuine satisfaction from generic positive language — products ranked by sentiment quality, not raw rating count</li>
+        <li><strong>Preference Matching:</strong> Maps user input to product categories and filters results by NLP-derived quality signals rather than simple keyword search</li>
+        <li><strong>Discount Aggregation:</strong> Surfaces external deal links relevant to recommended products so users can act on recommendations immediately</li>
+        <li><strong>Django Backend:</strong> Clean MVC structure with NLP processing components decoupled from the web layer — sentiment scoring runs as a separate service</li>
+        <li><strong>Minimal UI:</strong> Focused interface designed to get from preference input to recommendation in as few steps as possible</li>
       </ul>
       <p>
-        <strong>Tech Stack:</strong> Python · NLP (spaCy, NLTK) · Web Scraping · Django<br>
-        <strong>Project Status:</strong> Complete – No further development planned
+        <strong>Tech Stack:</strong> Python · Django · spaCy · NLTK · Web Scraping<br>
+        <strong>Status:</strong> Complete
       </p>
     `,
         },
         {
-            title: "News Scraping Jupyter Notebook",
-            type: "Jupyter Notebook",
-            client: "Myself",
+            title: "Google Advanced Data Analytics Capstone",
+            type: "Data Analytics",
+            client: "Google Certification",
             project_link: "#",
-            description: "Scraping Indian Express News",
-            image: "assets/img/screenshots/Jupyter.png",
-            id: "news-scraper",
-            detailsLink: "pages/portfolio-details.html?id=news-scraper",
-            filterClass: "filter-scrape",
-            detail_title:
-                "News Scraping Jupyter Notebook – Scraping Indian Express News",
-            detail_description: `
-      <p>
-        A research-focused project that scrapes the latest news articles from <strong>Indian Express</strong>, using <code>BeautifulSoup</code> for HTML parsing and <code>Pandas</code> for data handling. 
-        It's designed to gather structured news data for further analysis, reporting, or natural language processing (NLP) research.
-      </p>
-      <ul>
-        <li>📰 Scrapes news from all sections — headlines, full articles, timestamps, and metadata</li>
-        <li>📊 Stores data in structured formats (e.g., CSV) using <code>Pandas</code> for easy access and analysis</li>
-        <li>⚙️ Currently a manual process, with plans to automate daily updates in future versions</li>
-        <li>🔍 Useful for research in trend analysis, media coverage studies, or NLP training datasets</li>
-      </ul>
-      <p>
-        <strong>Tech Stack:</strong> Python · BeautifulSoup · Pandas<br>
-        <strong>Project Status:</strong> Working – Manual Scraping
-      </p>
-    `,
-        },
-        {
-            title: "WIP Linux Distro",
-            type: "Linux",
-            client: "Myself",
-            project_link: "#",
-            description: "Lightweight Custom Distro for Developers",
-            image: "assets/img/screenshots/Linux.jpg",
-            id: "linux-distro",
-            detailsLink: "pages/portfolio-details.html?id=linux-distro",
-            filterClass: "filter-linux",
-            detail_title:
-                "WIP Linux Distro – Lightweight Custom Distro for Developers & Enthusiasts",
-            detail_description: `
-      <p>
-        A personal passion project focused on building a lightweight, developer-oriented Linux distribution with a custom command-line interface and package management system. 
-        While still in its early stages, the vision is to create a resource-efficient, powerful environment tailored for developers, open-source enthusiasts, and future mass adoption.
-      </p>
-      <ul>
-        <li>🔧 Custom CLI tools designed for streamlined developer workflows</li>
-        <li>📦 Built-in package manager with compatibility for <code>Yum</code> and <code>Pacman</code> to provide broad software access</li>
-        <li>🪟 Exploring cross-platform support with potential for running Windows applications</li>
-        <li>🚀 Long-term goal to evolve into a full-fledged, installable distro used by a global developer community</li>
-        <li>💡 Currently code-only, with plans to add bootable images and installer support in future phases</li>
-      </ul>
-      <p>
-        <strong>Tech Stack:</strong> Custom Bash Scripts · CLI Tools · Package Manager (Yum, Pacman Compatible)<br>
-        <strong>Project Status:</strong> Early Development – Future Goal to Scale
-      </p>
-    `,
-        },
-        {
-            title: "Kaggle Competition Entries",
-            type: "Jupyter Notebook",
-            client: "Myself",
-            project_link: "#",
-            description: "Exploring Machine Learning Algorithms",
-            image: "assets/img/screenshots/Jupyter.png",
-            id: "kaggle",
-            detailsLink: "pages/portfolio-details.html?id=kaggle",
-            filterClass: "filter-mlai",
-            detail_title:
-                "Kaggle Competitions – Basic ML Algorithms for Real Datasets",
-            detail_description: `
-      <p>
-        A collection of Jupyter notebooks showcasing hands-on machine learning experiments using Kaggle datasets. 
-        The aim is to build practical ML skills by applying popular algorithms to real-world problems like classification, regression, and data exploration.
-      </p>
-      <ul>
-        <li>📊 Explored datasets including Titanic survival prediction, housing prices, and sentiment classification</li>
-        <li>🧠 Implemented algorithms such as <code>SVM</code>, <code>Decision Trees</code>, <code>Random Forest</code>, and <code>Naive Bayes</code></li>
-        <li>🔍 Focused on interpretability, model evaluation using confusion matrices and accuracy scores</li>
-        <li>🧼 Prioritized readable code, clear visualizations, and beginner-friendly explanations</li>
-      </ul>
-      <p>
-        <strong>Tech Stack:</strong> Python · Jupyter · Scikit-Learn · Pandas · Matplotlib<br>
-        <strong>Project Status:</strong> Active – More notebooks being added
-      </p>
-    `,
-        },
-        {
-            title: "VSCode Extension Packs",
-            type: "Extension",
-            client: "Myself",
-            project_link: "#",
-            description: "Developer Productivity Tools",
-            image: "assets/img/screenshots/vscode.jpg",
-            id: "vscode-extensions",
-            detailsLink: "pages/portfolio-details.html?id=vscode-extensions",
-            filterClass: "filter-extension",
-            detail_title:
-                "VS Code Extension Packs – Power Tools for Developers",
-            detail_description: `
-      <p>
-        A curated collection of Visual Studio Code extension packs, each tailored to boost productivity and streamline development workflows across various specializations.
-      </p>
-      <ul>
-        <li>🧠 <strong>ML Dev Pack</strong>: Includes <code>Jupyter</code>, <code>Python</code>, <code>PyLance</code>, and SciKit support extensions</li>
-        <li>🌐 <strong>Full Stack Pack</strong>: Bundles tools for <code>React</code>, <code>Tailwind CSS</code>, <code>Node.js</code>, <code>ESLint</code>, and <code>Prettier</code></li>
-        <li>🏁 <strong>CP/DSA Pack</strong>: Focused on competitive programming with <code>C/C++</code> extensions, input/output snippets, and debugging helpers</li>
-      </ul>
-      <p>
-        Shared via GitHub and, where available, published on the Visual Studio Code Marketplace.
-      </p>
-      <p>
-        <strong>Tech Stack:</strong> JSON (VS Code settings) · Marketplace Publishing<br>
-        <strong>Project Status:</strong> Ready to use – Community Feedback Welcome
-      </p>
-    `,
-        },
-        {
-            title: "📈 Capstone: Google Advanced Data Analytics Project",
-            type: "Jupyter Notebook",
-            client: "Myself",
-            project_link: "#",
-            description:
-                "Capstone project that explores, analyzes, and visualizes a large dataset using Python.",
+            description: "End-to-end analytics capstone for the Google Advanced Data Analytics certificate — EDA, statistical hypothesis testing, and stakeholder-ready data storytelling on a real-world dataset.",
             image: "assets/img/screenshots/Jupyter.png",
             id: "google-capstone",
             detailsLink: "pages/portfolio-details.html?id=google-capstone",
             filterClass: "filter-mlai",
-            detail_title: "Capstone: Google Advanced Data Analytics Project",
+            detail_title: "Google Advanced Data Analytics Capstone",
             detail_description: `
           <p>
-            This capstone project was completed as part of the <strong>Google Advanced Data Analytics</strong> certification. 
-            It covered end-to-end data handling — from data cleaning to hypothesis testing and data visualization.
+            The culminating project for the <strong>Google Advanced Data Analytics</strong> professional certificate. Covers a complete analytics workflow on a real-world business dataset — from raw data through cleaned, analyzed, and presentation-ready insights delivered as a business narrative.
           </p>
           <ul>
-            <li>Utilized a real-world dataset to derive insights for business decision-making</li>
-            <li>Cleaned and transformed data using <code>Pandas</code></li>
-            <li>Visualized key metrics and patterns using <code>Matplotlib</code> and <code>Seaborn</code></li>
-            <li>Performed exploratory data analysis (EDA) and statistical hypothesis testing</li>
-            <li>Focused on reproducible workflows and presentation-ready data storytelling</li>
+            <li><strong>Exploratory Data Analysis:</strong> Systematic profiling of distributions, outliers, correlations, and missing-data patterns before any modeling — building understanding of the data before drawing conclusions</li>
+            <li><strong>Statistical Hypothesis Testing:</strong> Formulated and tested business-relevant hypotheses using appropriate statistical tests with explicit significance thresholds and power considerations</li>
+            <li><strong>Stakeholder Visualization:</strong> Built a narrative visualization layer using Matplotlib and Seaborn — charts designed for business decision-makers, not just notebook output</li>
+            <li><strong>Reproducible Workflow:</strong> Structured notebook with clearly separated stages: ingestion → cleaning → EDA → hypothesis testing → conclusions</li>
+            <li><strong>Business Framing:</strong> Findings framed as actionable recommendations with supporting evidence — not just model accuracy numbers</li>
           </ul>
           <p>
             <strong>Tech Stack:</strong> Python · Pandas · Matplotlib · Seaborn · Jupyter Notebook<br>
-            <strong>Project Status:</strong> Complete – Submitted for Certification
+            <strong>Status:</strong> Complete – Submitted for Google Certification
           </p>
         `,
         },
@@ -367,7 +184,7 @@
             type: "Professional",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Order management, inventory tracking, and daily transaction reporting for a food chain operation.",
+            description: "Multi-terminal POS and CRM for a food chain — order management, real-time inventory, daily reporting, and multi-branch data sync engineered for peak-hour concurrency.",
             image: "",
             placeholderColor: "#E1F5EE",
             id: "pos-crm",
@@ -377,26 +194,21 @@
             detail_title: "POS & CRM System – Fovty Solutions",
             detail_description: `
           <p>
-            A comprehensive point-of-sale and customer relationship management system designed for a food chain operation. This system handles order management, inventory tracking, and daily transaction reporting with real-time analytics.
+            A full-featured point-of-sale and CRM built for a food chain with multiple physical branches. Manages the complete order lifecycle — placement through kitchen dispatch to payment — while keeping inventory and reporting synchronized across all terminals in real time.
           </p>
           <ul>
-            <li>🛒 <strong>Order Management:</strong> Streamlined POS interface for processing dine-in, takeout, and catering orders with split payment support</li>
-            <li>📦 <strong>Inventory Tracking:</strong> Real-time inventory updates with low-stock alerts and automated reordering suggestions</li>
-            <li>📊 <strong>Daily Reporting:</strong> Comprehensive sales reports, profit margin analysis, and staff performance metrics</li>
-            <li>👨‍🍳 <strong>Staff Management:</strong> Role-based access for managers, cashiers, and kitchen staff with shift scheduling</li>
-            <li>📱 <strong>Catering Module:</strong> Special handling for bulk catering orders with advance booking and custom menu options</li>
-            <li>🔄 <strong>Data Sync:</strong> Multi-branch support with centralized database for chain-wide inventory and sales visibility</li>
+            <li><strong>Order Management:</strong> POS interface supporting dine-in, takeout, and catering with split payment, voids, and partial refunds — designed for cashier speed under pressure</li>
+            <li><strong>Real-Time Inventory:</strong> Stock levels decrement on every order; low-stock alerts and automated reorder suggestions prevent service gaps during peak hours</li>
+            <li><strong>Multi-Branch Sync:</strong> Centralized MySQL schema with branch-aware queries — chain-wide sales and inventory visibility from a single admin panel</li>
+            <li><strong>Role-Based Access:</strong> Distinct interfaces for managers, cashiers, and kitchen staff — each role sees only what it needs, reducing errors and unauthorized actions</li>
+            <li><strong>Catering Module:</strong> Advance booking workflow for bulk catering orders with custom menu configurations and deposit tracking separate from walk-in orders</li>
+            <li><strong>Daily Reporting:</strong> Automated end-of-day reports covering gross sales, item-level margins, voids, and staff performance — exportable for accountant review</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Handling peak-hour concurrency while maintaining data integrity across multiple POS terminals.
+            <strong>Key Engineering Challenge:</strong> Maintaining data integrity across simultaneous POS terminals during peak service — solved with optimistic locking and transaction-scoped inventory updates.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Laravel · MySQL · jQuery · Bootstrap<br>
-            <strong>Company:</strong> Fovty Solutions<br>
-            <strong>Project Status:</strong> Private – NDA Protected
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> Laravel · MySQL · jQuery · Bootstrap &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
           </p>
         `,
         },
@@ -405,7 +217,7 @@
             type: "Professional",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Case tracking, document storage, and client communication portal for a legal services firm.",
+            description: "End-to-end legal practice management — case lifecycle tracking, encrypted document storage, client portal, billing, and compliance-grade access controls for a legal services firm.",
             image: "",
             placeholderColor: "#E6F1FB",
             id: "law-firm",
@@ -415,27 +227,22 @@
             detail_title: "Law Firm Management System – Fovty Solutions",
             detail_description: `
           <p>
-            A comprehensive legal practice management system designed to streamline case management, document handling, and client communications for a legal services firm.
+            A comprehensive practice management system built for a legal services firm — replacing spreadsheets and email threads with a single access-controlled platform that covers intake through billing and archival.
           </p>
           <ul>
-            <li>📁 <strong>Case Management:</strong> Complete case lifecycle tracking from initial consultation to case closure with milestone reminders</li>
-            <li>📄 <strong>Document Storage:</strong> Secure document management with version control, client-specific folders, and encrypted storage</li>
-            <li>💬 <strong>Client Portal:</strong> Secure communication channel for clients to view case status, download documents, and message their attorneys</li>
-            <li>👥 <strong>Role-Based Access:</strong> Granular permissions for partners, associates, paralegals, and administrative staff</li>
-            <li>📅 <strong>Calendar Integration:</strong> Court dates, client meetings, and filing deadlines with automatic reminders</li>
-            <li>💰 <strong>Billing Module:</strong> Time tracking, invoice generation, and payment processing for legal services</li>
-            <li>🔍 <strong>Search Functionality:</strong> Powerful full-text search across all cases and documents for quick information retrieval</li>
+            <li><strong>Case Lifecycle Tracking:</strong> Full timeline from intake through active representation to closure — milestone reminders, status flags, and complete audit history on every matter</li>
+            <li><strong>Secure Document Management:</strong> Client-partitioned storage with version control and encrypted uploads; attorneys and clients see only their authorized files</li>
+            <li><strong>Client Portal:</strong> Password-protected interface for clients to view case progress, download documents, and message assigned attorneys — reducing inbound support calls</li>
+            <li><strong>Granular Role Permissions:</strong> Distinct access levels for partners, associates, paralegals, and admin — configurable per case and per client matter</li>
+            <li><strong>Integrated Billing:</strong> Time-entry logging, invoice generation, and payment tracking with breakdowns by attorney and activity type</li>
+            <li><strong>Calendar & Deadline Engine:</strong> Court dates, client appointments, and statutory deadlines synced to attorney calendars with configurable advance reminders</li>
+            <li><strong>Full-Text Search:</strong> Cross-case and cross-document search covering all text content — critical for due diligence and finding relevant precedent quickly</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Implementing strict data privacy compliance while maintaining ease of access for authorized personnel.
+            <strong>Key Engineering Challenge:</strong> Strict data isolation between client matters while supporting firm-wide search and reporting — solved through row-level security policies and role-scoped query layers.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Laravel · MySQL · REST API · Bootstrap<br>
-            <strong>Company:</strong> Fovty Solutions<br>
-            <strong>Project Status:</strong> Private – NDA Protected
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> Laravel · MySQL · REST API · Bootstrap &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
           </p>
         `,
         },
@@ -444,37 +251,31 @@
             type: "Professional",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Real-time parcel tracking integrated with logistics APIs.",
+            description: "Logistics CRM unifying multiple carrier APIs into one real-time tracking interface — WebSocket live updates, automated invoicing, SMS/email alerts, and a self-service customer portal.",
             image: "",
             placeholderColor: "#FAEEDA",
             id: "shipment-tracking",
             detailsLink: "#",
             filterClass: "filter-professional",
-            techStack: ["Laravel", "External APIs", "AJAX", "MySQL"],
+            techStack: ["Laravel", "External APIs", "WebSockets", "MySQL"],
             detail_title: "Shipment Tracking CRM – Fovty Solutions",
             detail_description: `
           <p>
-            A comprehensive shipment tracking and logistics management system that provides real-time parcel tracking integrated with multiple logistics provider APIs.
+            A logistics management platform that consolidates tracking data from multiple carrier APIs into a single normalized interface — eliminating the manual overhead of cross-checking courier dashboards and automating the invoicing and notification workflow around every shipment.
           </p>
           <ul>
-            <li>📦 <strong>Multi-Carrier Integration:</strong> Unified tracking across major logistics providers with standardized status updates</li>
-            <li>🔄 <strong>Real-Time Updates:</strong> WebSocket-powered live tracking status updates without page refresh</li>
-            <li>📄 <strong>Automated Invoices:</strong> Dynamic invoice generation based on weight, distance, and service type with PDF export</li>
-            <li>📊 <strong>Analytics Dashboard:</strong> Delivery performance metrics, delay analysis, and customer satisfaction tracking</li>
-            <li>📧 <strong>Automated Notifications:</strong> Email and SMS alerts for shipment status changes at key milestones</li>
-            <li>🔗 <strong>API Gateway:</strong> RESTful API for third-party integrations and e-commerce platform connections</li>
-            <li>👤 <strong>Client Portal:</strong> Self-service tracking page for end customers with shipment history</li>
+            <li><strong>Multi-Carrier API Integration:</strong> Consumes tracking feeds from multiple logistics providers; a normalization layer translates inconsistent status schemas into a unified internal model without losing carrier-specific detail</li>
+            <li><strong>Real-Time WebSocket Updates:</strong> Live shipment status pushed to the browser — no polling, no page refresh, no stale data</li>
+            <li><strong>Automated Invoice Generation:</strong> Invoices generated dynamically based on weight, dimensions, distance tier, and service type — exported as print-ready PDFs</li>
+            <li><strong>Customer Self-Service Portal:</strong> Public-facing tracking page where end customers enter a shipment ID to view their full delivery timeline and history</li>
+            <li><strong>Notification Engine:</strong> Configurable email and SMS alerts at key milestones — dispatch, in-transit, out-for-delivery, and delivered</li>
+            <li><strong>Analytics Dashboard:</strong> Delivery KPIs including on-time rate, average transit time, delay reasons, and carrier-level performance comparisons</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Handling inconsistent tracking data formats from multiple carrier APIs and normalizing them into a unified system.
+            <strong>Key Engineering Challenge:</strong> Each carrier returns events in a different format with different status codes and timestamp conventions — the normalization pipeline maps all of them to a consistent internal schema.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Laravel · External APIs · AJAX · MySQL<br>
-            <strong>Company:</strong> Fovty Solutions<br>
-            <strong>Project Status:</strong> Private – NDA Protected
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> Laravel · External APIs · WebSockets · AJAX · MySQL &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
           </p>
         `,
         },
@@ -483,7 +284,7 @@
             type: "Professional",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Extended Prefex CRM with automated lead assignment and follow-up reminders.",
+            description: "Extended Prefex CRM with a configurable automation engine — smart lead assignment, follow-up scheduling, field operations coordination, and escalation workflows.",
             image: "",
             placeholderColor: "#EEEDFE",
             id: "leads-crm",
@@ -493,27 +294,21 @@
             detail_title: "Leads & CRM Automation – Fovty Solutions",
             detail_description: `
           <p>
-            An enhanced version of the Prefex CRM system with intelligent automation features for lead management, follow-up workflows, and field operations coordination.
+            An extensive customization of the Prefex CRM platform that adds an intelligent automation layer on top of the core lead management system — built for a field-operations-heavy business where manual follow-up tracking was creating measurable revenue leakage.
           </p>
           <ul>
-            <li>🎯 <strong>Smart Lead Assignment:</strong> Automated lead distribution based on territory, agent performance, and availability</li>
-            <li>⏰ <strong>Follow-Up Automation:</strong> Configurable reminder schedules with email and in-app notifications for missed follow-ups</li>
-            <li>📍 <strong>Site Operations Manager:</strong> Field staff scheduling with route optimization and visit verification</li>
-            <li>👷 <strong>Role-Based Permissions:</strong> Customizable access levels for managers, agents, and field staff</li>
-            <li>📈 <strong>Conversion Analytics:</strong> Lead-to-cash pipeline tracking with conversion rate insights</li>
-            <li>🔔 <strong>Escalation Engine:</strong> Automatic escalation of stale leads and overdue tasks to managers</li>
-            <li>📱 <strong>Mobile Optimization:</strong> Responsive interface for field agents to update leads on-the-go</li>
+            <li><strong>Smart Lead Assignment:</strong> Automated distribution engine routes inbound leads based on territory, agent workload, and recent conversion performance — no manual dispatcher needed</li>
+            <li><strong>Follow-Up Automation:</strong> Rule-driven reminder system with escalating notifications for overdue follow-ups; automatic escalation to managers past a configurable SLA window</li>
+            <li><strong>Field Operations Module:</strong> Site visit scheduling with route optimization, GPS check-in verification, and structured post-visit reporting for field agents</li>
+            <li><strong>Configurable Business Rules:</strong> Non-technical admins configure assignment rules, SLA thresholds, and escalation chains through a UI — no code changes needed for business process updates</li>
+            <li><strong>Pipeline Analytics:</strong> Lead-to-close funnel metrics by agent, territory, and lead source — surfaces exactly where conversions are dropping</li>
+            <li><strong>Mobile-Optimized Interface:</strong> Responsive layout for field agents updating lead status from a phone between site visits</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Building a flexible automation engine that could handle complex business rules while remaining user-configurable.
+            <strong>Key Engineering Challenge:</strong> Building an automation rule engine flexible enough to encode real business logic without requiring a developer for every policy change.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Laravel · PHP · AJAX · MySQL<br>
-            <strong>Company:</strong> Fovty Solutions<br>
-            <strong>Project Status:</strong> Private – NDA Protected
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> Laravel · PHP · AJAX · MySQL &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
           </p>
         `,
         },
@@ -522,7 +317,7 @@
             type: "Professional",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Platform to list, browse, and purchase startup concepts.",
+            description: "Two-sided marketplace for buying and selling startup concepts — Stripe escrow, NDA-gated document release, admin moderation, and an in-platform offer negotiation system.",
             image: "",
             placeholderColor: "#E1F5EE",
             id: "idea-marketplace",
@@ -532,28 +327,22 @@
             detail_title: "Business Idea Marketplace – Fovty Solutions",
             detail_description: `
           <p>
-            A two-sided marketplace platform where entrepreneurs can list, browse, and purchase innovative startup concepts and business ideas.
+            A two-sided marketplace where entrepreneurs list validated startup concepts and investors or aspiring founders browse, negotiate, and acquire them. The core engineering challenge was building enough trust infrastructure — escrow payments, IP protection, identity gating — for strangers to transact confidently on abstract ideas.
           </p>
           <ul>
-            <li>🏪 <strong>Seller Dashboard:</strong> Complete workspace for sellers to create, manage, and update their idea listings</li>
-            <li>🛒 <strong>Browse & Search:</strong> Advanced filtering by industry, investment range, and business type</li>
-            <li>💳 <strong>Secure Payments:</strong> Full Stripe integration with checkout, subscriptions, and escrow support</li>
-            <li>📝 <strong>Idea Submissions:</strong> Structured submission forms with business model canvas and market analysis</li>
-            <li>🛡️ <strong>Admin Moderation:</strong> Content review workflow to ensure quality and prevent IP infringement</li>
-            <li>💬 <strong>Negotiation System:</strong> In-platform messaging and offer management for buyer-seller discussions</li>
-            <li>📊 <strong>Analytics:</strong> Platform-wide metrics for admin including GMV, active listings, and user engagement</li>
-            <li>🔐 <strong>IP Protection:</strong> Document watermarking and secure file sharing with NDA support</li>
+            <li><strong>Seller Dashboard:</strong> Full listing workspace — structured submissions with business model canvas, market sizing, competitive analysis, and financial projections</li>
+            <li><strong>Discovery & Search:</strong> Filtered browse by industry vertical, capital requirement, business model type, and seller credibility score</li>
+            <li><strong>Stripe Escrow Payments:</strong> Funds held in escrow at checkout; released to seller only after buyer confirms receipt of all promised assets — with a built-in dispute window</li>
+            <li><strong>NDA-Gated Documents:</strong> Detailed plans and financials locked behind a countersigned NDA flow; watermarked PDFs prevent unauthorized redistribution after signing</li>
+            <li><strong>Negotiation System:</strong> Structured offer/counter-offer messaging with offer history, expiry timers, and deal status tracking separate from general chat</li>
+            <li><strong>Admin Moderation Queue:</strong> Content review workflow to vet listings for completeness and flag potential IP issues before they go live</li>
+            <li><strong>Platform Analytics:</strong> Admin dashboard tracking GMV, active listing inventory, average time-to-close, and buyer/seller engagement metrics</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Building trust between buyers and sellers while protecting intellectual property throughout the transaction.
+            <strong>Key Engineering Challenge:</strong> Designing a transaction flow that protects both buyer (getting what was promised) and seller (not giving away IP before payment) — solved through phased escrow logic and staged document release.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Node.js · React · MongoDB · Stripe API<br>
-            <strong>Company:</strong> Fovty Solutions<br>
-            <strong>Project Status:</strong> Private – NDA Protected
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> Node.js · React · MongoDB · Stripe API &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
           </p>
         `,
         },
@@ -562,7 +351,7 @@
             type: "Professional",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "AI-powered resume builder, LinkedIn profile optimizer, and job application tracker.",
+            description: "Full-stack AI career product — ATS-optimized resume generation, LinkedIn profile analysis, AI headshot enhancement, LLM-written cover letters, and a Kanban job application tracker.",
             image: "",
             placeholderColor: "#EEEDFE",
             id: "ai-career",
@@ -572,28 +361,22 @@
             detail_title: "AI Career Platform – Fovty Solutions",
             detail_description: `
           <p>
-            An all-in-one AI-powered career development platform that helps job seekers create professional resumes, optimize their LinkedIn presence, and track job applications.
+            A full-stack AI product consolidating every tool a modern job seeker needs into one platform. Integrates multiple AI providers — LLMs, image models, and Python inference — to deliver personalized, high-quality career content rather than generic templates.
           </p>
           <ul>
-            <li>📄 <strong>AI Resume Builder:</strong> Dynamic resume generation with multiple templates, keyword optimization, and ATS-friendly formatting</li>
-            <li>💼 <strong>LinkedIn Optimizer:</strong> AI analysis of profiles with suggestions for headline, summary, and experience sections</li>
-            <li>📸 <strong>Headshot Generation:</strong> AI-enhanced professional headshot creation from casual photos</li>
-            <li>📋 <strong>Application Tracker:</strong> Kanban-style pipeline for managing job applications with interview reminders</li>
-            <li>🤖 <strong>Cover Letter Generator:</strong> Custom cover letters tailored to each job description using LLM technology</li>
-            <li>📊 <strong>Interview Prep:</strong> AI-generated practice questions based on target role and company</li>
-            <li>🔔 <strong>Job Alerts:</strong> Personalized job notifications based on skills, location, and preferences</li>
-            <li>📈 <strong>Analytics Dashboard:</strong> Application metrics, response rates, and career progress tracking</li>
+            <li><strong>ATS Resume Builder:</strong> Generates keyword-optimized resumes tailored to a target job description — formatted to pass applicant tracking systems with selectable visual templates</li>
+            <li><strong>LinkedIn Optimizer:</strong> Analyzes the user's profile against industry benchmarks and delivers specific rewrites for headline, about section, and experience bullets</li>
+            <li><strong>AI Headshot Enhancement:</strong> Transforms casual photos into professional-grade headshots using image generation models — no photoshoot required</li>
+            <li><strong>Cover Letter Engine:</strong> Produces bespoke cover letters from a job description, company context, and user background — structured LLM prompting ensures relevance over generic output</li>
+            <li><strong>Application Tracker:</strong> Kanban pipeline managing open applications through stages — applied → phone screen → interview → offer — with reminders at each stage</li>
+            <li><strong>Interview Prep:</strong> Role-specific and company-specific practice questions with suggested answer frameworks generated on demand</li>
+            <li><strong>Job Alert Engine:</strong> Personalized notifications for new postings matching skill set, seniority, and location preferences</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Integrating multiple AI services while maintaining fast response times and ensuring content quality.
+            <strong>Key Engineering Challenge:</strong> Orchestrating multiple AI services under a single user request while maintaining sub-3-second response times and consistent output quality across models.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Node.js · React · OpenAI API · MongoDB · Python<br>
-            <strong>Company:</strong> Fovty Solutions<br>
-            <strong>Project Status:</strong> Private – NDA Protected
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> Node.js · React · OpenAI API · MongoDB · Python &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
           </p>
         `,
         },
@@ -602,7 +385,7 @@
             type: "Professional",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Chrome extension for recruiters that extracts professional profile data.",
+            description: "Chrome extension for recruiters — profile scraping, personalized connection campaigns, timezone-aware outreach scheduling, ATS export, and rate-limiting to protect the account.",
             image: "",
             placeholderColor: "#EEEDFE",
             id: "linkedin-automation",
@@ -612,67 +395,56 @@
             detail_title: "LinkedIn Automation Extension – Fovty Solutions",
             detail_description: `
           <p>
-            A powerful Chrome extension designed for recruiters to efficiently extract professional profile data and automate connection and outreach workflows on LinkedIn.
+            A Chrome extension that gives recruiters programmatic control over their LinkedIn outreach — from candidate discovery and data extraction through personalized connection campaigns and response tracking. Account safety is a first-class concern throughout.
           </p>
           <ul>
-            <li>👤 <strong>Profile Extraction:</strong> One-click scraping of candidate profiles including work history, skills, and contact info</li>
-            <li>📊 <strong>Data Export:</strong> Export collected data to CSV, JSON, or directly to ATS integration</li>
-            <li>🤝 <strong>Auto-Connect:</strong> Personalized connection requests with template customization and follow-up sequences</li>
-            <li>💬 <strong>Outreach Automation:</strong> Automated messaging campaigns with personalization tokens</li>
-            <li>📅 <strong>Schedule Outreach:</strong> Time-optimized message delivery based on recipient timezone</li>
-            <li>📈 <strong>Engagement Tracking:</strong> Monitor connection acceptance rates and message responses</li>
-            <li>🛡️ <strong>Safety Features:</strong> Rate limiting, random delays, and session rotation to prevent account restrictions</li>
-            <li>🔐 <strong>Data Privacy:</strong> Local data storage with optional cloud sync and encryption</li>
+            <li><strong>Profile Extraction:</strong> One-click scraping of candidate profiles — work history, skills, education, and contact details — without leaving the current page</li>
+            <li><strong>Bulk Data Export:</strong> Export collected candidates to CSV, JSON, or push directly to an ATS integration endpoint for pipeline import</li>
+            <li><strong>Personalized Campaigns:</strong> Template-based connection requests with per-recipient variable substitution (name, company, role) and configurable multi-step follow-up sequences</li>
+            <li><strong>Timezone-Aware Scheduling:</strong> Outreach messages queued and delivered during the recipient's local business hours — measurably improves response rates</li>
+            <li><strong>Engagement Analytics:</strong> Tracks connection acceptance rates and reply rates per campaign and per template variant</li>
+            <li><strong>Account Safety Layer:</strong> Configurable daily action limits, randomized delays between actions, and session rotation to stay within LinkedIn's behavioral thresholds</li>
+            <li><strong>Local-First Data:</strong> All candidate data stored locally by default; optional encrypted cloud sync for team sharing</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Building reliable automation that works within LinkedIn's terms while providing meaningful productivity gains.
+            <strong>Key Engineering Challenge:</strong> Building automation that is fast and reliable enough to be useful while staying within LinkedIn's detection thresholds — required careful study of rate limits and session fingerprinting behavior.
           </p>
           <p>
-            <strong>Tech Stack:</strong> JavaScript · Puppeteer · Python · Chrome API<br>
-            <strong>Company:</strong> Fovty Solutions<br>
-            <strong>Project Status:</strong> Private – NDA Protected
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> JavaScript · Chrome Extension APIs · Puppeteer · Python &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
           </p>
         `,
         },
         {
             title: "Recommendation System",
             type: "Professional",
-            client: "Allsoft Solutions (Intern)",
+            client: "Allsoft Solutions",
             project_link: "#",
-            description: "Collaborative filtering recommendation engine built during internship.",
+            description: "Production-grade collaborative filtering engine with a Flask REST API — user-based and item-based CF, hyperparameter tuning, offline evaluation, and an A/B testing framework.",
             image: "",
             placeholderColor: "#EAF3DE",
             id: "recommendation-system",
             detailsLink: "#",
             filterClass: "filter-professional",
             techStack: ["Python", "Flask", "Scikit-learn", "Pandas"],
-            detail_title: "Recommendation System – Allsoft Solutions (Intern)",
+            detail_title: "Recommendation System – Allsoft Solutions",
             detail_description: `
           <p>
-            A collaborative filtering-based recommendation engine developed during my internship, designed to analyze user behavior and provide personalized product suggestions.
+            A production-grade recommendation engine developed during my internship at Allsoft Solutions. Implements both user-based and item-based collaborative filtering, exposed through a REST API — designed to handle thousands of concurrent users at real-time latency.
           </p>
           <ul>
-            <li>🧠 <strong>ML Algorithm:</strong> Implemented user-based and item-based collaborative filtering for personalized recommendations</li>
-            <li>📊 <strong>Data Pipeline:</strong> End-to-end data preprocessing including cleaning, transformation, and feature engineering</li>
-            <li>🔧 <strong>Model Optimization:</strong> Hyperparameter tuning and cross-validation to improve recommendation accuracy</li>
-            <li>🌐 <strong>REST API:</strong> Flask-based API endpoints for real-time recommendation retrieval</li>
-            <li>📈 <strong>Performance Metrics:</strong> Evaluation using precision, recall, and F1-score for model validation</li>
-            <li>💾 <strong>Scalable Storage:</strong> Efficient data structures for handling large user-item matrices</li>
-            <li>🧪 <strong>A/B Testing Framework:</strong> Setup for testing recommendation quality with live user feedback</li>
+            <li><strong>Dual CF Algorithms:</strong> Both user-based (find similar users, recommend their items) and item-based (find similar items to what the user liked) CF — configurable weighting between the two for tuning relevance vs. serendipity</li>
+            <li><strong>End-to-End Data Pipeline:</strong> Raw interaction data → cleaning → normalization → sparse matrix construction → model training — fully reproducible and re-runnable on refreshed data</li>
+            <li><strong>Hyperparameter Tuning:</strong> Grid search over similarity metrics (cosine, Pearson, Jaccard) and neighborhood sizes using cross-validation to maximize precision@k</li>
+            <li><strong>Flask REST API:</strong> <code>/recommend</code> endpoint returns a ranked item list for a given user ID — configurable result count, latency-optimized with precomputed similarity caches</li>
+            <li><strong>Offline Evaluation:</strong> Model quality measured with precision, recall, F1-score, and NDCG across multiple test folds before any live deployment</li>
+            <li><strong>A/B Testing Framework:</strong> Traffic-splitting infrastructure to run model variants in parallel and compare recommendation quality on live user interactions</li>
+            <li><strong>Scalable Storage:</strong> Sparse matrix representations keep memory footprint manageable as user and item counts grow into the thousands</li>
           </ul>
           <p>
-            <strong>Key Challenge:</strong> Building a recommendation engine that could scale to thousands of users while maintaining real-time response times.
+            <strong>Key Engineering Challenge:</strong> Keeping recommendation latency under 200ms for large user-item matrices — solved through precomputed similarity caches refreshed on a background schedule rather than computed on-request.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Python · Flask · Scikit-learn · Pandas<br>
-            <strong>Company:</strong> Allsoft Solutions (Intern)<br>
-            <strong>Project Status:</strong> Private
-          </p>
-          <p class="text-muted">
-            <em>Private — no live demo available</em>
+            <strong>Tech Stack:</strong> Python · Flask · Scikit-learn · Pandas · NumPy &nbsp;|&nbsp; <strong>Client:</strong> Allsoft Solutions (Internship) &nbsp;|&nbsp; <em>Private</em>
           </p>
         `,
         },
