@@ -19,6 +19,7 @@
             description: "Published Firefox extension that snapshots any webpage — HTML, CSS, fonts, and images — into a single portable file.",
             image: "assets/img/screenshots/browser-extension.png",
             id: "html-cloner",
+            techStack: ["JavaScript", "WebExtension APIs"],
             detailsLink: "pages/portfolio-details.html?id=html-cloner",
             filterClass: "filter-extension",
             detail_title: "HTML Cloner – Full Webpage Snapshot Extension",
@@ -47,6 +48,7 @@
             description: "NLP classification pipeline using Logistic Regression and BERT to identify misinformation in news articles — with full preprocessing, feature extraction, and model evaluation.",
             image: "assets/img/screenshots/Jupyter.png",
             id: "fake-news",
+            techStack: ["Python", "Scikit-learn", "BERT", "Pandas", "NLTK"],
             detailsLink: "pages/portfolio-details.html?id=fake-news",
             filterClass: "filter-mlai",
             detail_title: "Fake News Detection – NLP Classification System",
@@ -75,6 +77,7 @@
             description: "Production-ready Django REST starter with token auth, rate limiting, full CRUD endpoints, and a Postman collection — designed to eliminate boilerplate on new API projects.",
             image: "assets/img/screenshots/api.jpeg",
             id: "django-api",
+            techStack: ["Django REST Framework", "Python", "SQLite", "Postman"],
             detailsLink: "pages/portfolio-details.html?id=django-api",
             filterClass: "filter-api",
             detail_title: "Django API Framework – Reusable Token-Authenticated REST Server",
@@ -103,6 +106,7 @@
             description: "API-first backend for turn-based multiplayer games — handles match sessions, player management, score submission, and prize distribution, decoupled from any frontend.",
             image: "assets/img/screenshots/api.jpeg",
             id: "game-framework",
+            techStack: ["Node.js", "Express", "MongoDB"],
             detailsLink: "pages/portfolio-details.html?id=game-framework",
             filterClass: "filter-api",
             detail_title: "Node.js Game Framework – Multiplayer Turn-Based Game Backend",
@@ -131,6 +135,7 @@
             description: "NLP-driven product discovery app that scores review sentiment with spaCy and NLTK to surface genuinely top-rated recommendations — not just highest-rated by count.",
             image: "assets/img/screenshots/freecom.png",
             id: "freecom",
+            techStack: ["Python", "Django", "spaCy", "NLTK"],
             detailsLink: "pages/portfolio-details.html?id=freecom",
             filterClass: "filter-mlai",
             detail_title: "Freecom – NLP-Powered Product Recommendation Engine",
@@ -159,6 +164,7 @@
             description: "End-to-end analytics capstone for the Google Advanced Data Analytics certificate — EDA, statistical hypothesis testing, and stakeholder-ready data storytelling on a real-world dataset.",
             image: "assets/img/screenshots/Jupyter.png",
             id: "google-capstone",
+            techStack: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter"],
             detailsLink: "pages/portfolio-details.html?id=google-capstone",
             filterClass: "filter-mlai",
             detail_title: "Google Advanced Data Analytics Capstone",
@@ -180,273 +186,249 @@
         `,
         },
         {
-            title: "POS & CRM System",
-            type: "Professional",
-            client: "Fovty Solutions",
+            title: "Compresso",
+            type: "Desktop Application",
+            client: "Personal",
             project_link: "#",
-            description: "Multi-terminal POS and CRM for a food chain — order management, real-time inventory, daily reporting, and multi-branch data sync engineered for peak-hour concurrency.",
+            description: "Local-first desktop video downloader for 16+ platforms with a Pro paid tier — license validation in Rust, feature enforcement in Python, UI gates in React.",
             image: "",
-            placeholderColor: "#E1F5EE",
-            id: "pos-crm",
-            detailsLink: "#",
-            filterClass: "filter-professional",
-            techStack: ["Laravel", "MySQL", "jQuery", "Bootstrap"],
-            detail_title: "POS & CRM System – Fovty Solutions",
+            placeholderColor: "#0d1b2a",
+            id: "compresso",
+            techStack: ["Tauri", "Rust", "React", "Python", "yt-dlp"],
+            detailsLink: "pages/portfolio-details.html?id=compresso",
+            filterClass: "filter-desktop",
+            detail_title: "Compresso – Local-First Desktop Video Downloader",
             detail_description: `
           <p>
-            A full-featured point-of-sale and CRM built for a food chain with multiple physical branches. Manages the complete order lifecycle — placement through kitchen dispatch to payment — while keeping inventory and reporting synchronized across all terminals in real time.
+            A local-first desktop video downloader built with Tauri, React, and Python — supporting 16+ platforms with a monetized Pro tier gated by Lemon Squeezy license keys. Runs entirely offline after activation, with a clean architecture that separates validation (Rust), enforcement (Python), and UI (React).
           </p>
           <ul>
-            <li><strong>Order Management:</strong> POS interface supporting dine-in, takeout, and catering with split payment, voids, and partial refunds — designed for cashier speed under pressure</li>
-            <li><strong>Real-Time Inventory:</strong> Stock levels decrement on every order; low-stock alerts and automated reorder suggestions prevent service gaps during peak hours</li>
-            <li><strong>Multi-Branch Sync:</strong> Centralized MySQL schema with branch-aware queries — chain-wide sales and inventory visibility from a single admin panel</li>
-            <li><strong>Role-Based Access:</strong> Distinct interfaces for managers, cashiers, and kitchen staff — each role sees only what it needs, reducing errors and unauthorized actions</li>
-            <li><strong>Catering Module:</strong> Advance booking workflow for bulk catering orders with custom menu configurations and deposit tracking separate from walk-in orders</li>
-            <li><strong>Daily Reporting:</strong> Automated end-of-day reports covering gross sales, item-level margins, voids, and staff performance — exportable for accountant review</li>
+            <li><strong>16+ Platform Support:</strong> Downloads from YouTube, TikTok, Twitter, Instagram, Vimeo, JioSaavn, Bandcamp, Mixcloud, and more — free tier limited to the top 5</li>
+            <li><strong>Pro Tier Monetization:</strong> One-time $19 license via Lemon Squeezy — unlimited concurrent downloads, all platforms, bookmark scanner, playlist sync, and full download history</li>
+            <li><strong>License Validation in Rust:</strong> Tauri commands handle activation and validation against the Lemon Squeezy API; result cached locally in <code>~/.compresso/license.json</code> for offline use after first activation</li>
+            <li><strong>Feature Enforcement in Python:</strong> Python scripts receive a <code>--premium</code> flag from Rust — free tier enforces platform allowlist and concurrency limits at the script level, not just the UI</li>
+            <li><strong>React UI Gates:</strong> <code>useLicense</code> hook checks license status on load; locked features show an upgrade prompt with purchase link and inline key activation input</li>
+            <li><strong>Saved Library:</strong> Playlist management with sync detection for new videos — capped at 3 playlists on free, unlimited on Pro</li>
+            <li><strong>Cookie Authentication:</strong> Pro-only feature for authenticated downloads of private or member-only content</li>
           </ul>
           <p>
-            <strong>Key Engineering Challenge:</strong> Maintaining data integrity across simultaneous POS terminals during peak service — solved with optimistic locking and transaction-scoped inventory updates.
+            <strong>Key Engineering Decision:</strong> Validation runs in Rust (never exposed to the JS frontend), enforcement runs in Python (adjacent to the actual download logic) — keeping the trust boundary clean across all three layers.
           </p>
           <p>
-            <strong>Tech Stack:</strong> Laravel · MySQL · jQuery · Bootstrap &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
+            <strong>Tech Stack:</strong> Tauri · Rust · React · TypeScript · Python · yt-dlp · Lemon Squeezy API<br>
+            <strong>Status:</strong> In Development
           </p>
         `,
+        },
+    ];
+
+    const professionalProjects = [
+        {
+            title: "POS & CRM System",
+            type: "Enterprise Software",
+            client: "Fovty Solutions",
+            project_link: "#",
+            description: "Multi-terminal point-of-sale and CRM for a food chain — real-time inventory, multi-branch sync, peak-hour concurrency.",
+            image: "",
+            id: "pos-crm",
+            techStack: ["Laravel", "MySQL", "jQuery", "Bootstrap"],
+            detail_title: "POS & CRM System – Food Chain Operations Platform",
+            detail_description: `
+              <p>A comprehensive point-of-sale and customer relationship management system for a multi-branch food chain. Handles concurrent order processing, inventory management, and daily financial reporting across all terminals.</p>
+              <ul>
+                <li><strong>Order Management:</strong> Streamlined POS interface for dine-in, takeout, and catering orders with split payment support</li>
+                <li><strong>Inventory Tracking:</strong> Real-time inventory updates with low-stock alerts and automated reordering suggestions</li>
+                <li><strong>Daily Reporting:</strong> Comprehensive sales reports, profit margin analysis, and staff performance metrics</li>
+                <li><strong>Staff Management:</strong> Role-based access for managers, cashiers, and kitchen staff with shift scheduling</li>
+                <li><strong>Catering Module:</strong> Bulk catering order handling with advance booking and custom menu options</li>
+                <li><strong>Multi-Branch Sync:</strong> Centralized database for chain-wide inventory and sales visibility across all locations</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Handling peak-hour concurrency while maintaining data integrity across multiple POS terminals simultaneously.</p>
+              <p><strong>Tech Stack:</strong> Laravel · MySQL · jQuery · Bootstrap<br>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+            `,
         },
         {
             title: "Law Firm Management System",
-            type: "Professional",
+            type: "Enterprise Software",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "End-to-end legal practice management — case lifecycle tracking, encrypted document storage, client portal, billing, and compliance-grade access controls for a legal services firm.",
+            description: "End-to-end legal practice management — case lifecycle, encrypted document storage, client portal, and billing.",
             image: "",
-            placeholderColor: "#E6F1FB",
             id: "law-firm",
-            detailsLink: "#",
-            filterClass: "filter-professional",
             techStack: ["Laravel", "MySQL", "REST API", "Bootstrap"],
-            detail_title: "Law Firm Management System – Fovty Solutions",
+            detail_title: "Law Firm Management System – Legal Practice Platform",
             detail_description: `
-          <p>
-            A comprehensive practice management system built for a legal services firm — replacing spreadsheets and email threads with a single access-controlled platform that covers intake through billing and archival.
-          </p>
-          <ul>
-            <li><strong>Case Lifecycle Tracking:</strong> Full timeline from intake through active representation to closure — milestone reminders, status flags, and complete audit history on every matter</li>
-            <li><strong>Secure Document Management:</strong> Client-partitioned storage with version control and encrypted uploads; attorneys and clients see only their authorized files</li>
-            <li><strong>Client Portal:</strong> Password-protected interface for clients to view case progress, download documents, and message assigned attorneys — reducing inbound support calls</li>
-            <li><strong>Granular Role Permissions:</strong> Distinct access levels for partners, associates, paralegals, and admin — configurable per case and per client matter</li>
-            <li><strong>Integrated Billing:</strong> Time-entry logging, invoice generation, and payment tracking with breakdowns by attorney and activity type</li>
-            <li><strong>Calendar & Deadline Engine:</strong> Court dates, client appointments, and statutory deadlines synced to attorney calendars with configurable advance reminders</li>
-            <li><strong>Full-Text Search:</strong> Cross-case and cross-document search covering all text content — critical for due diligence and finding relevant precedent quickly</li>
-          </ul>
-          <p>
-            <strong>Key Engineering Challenge:</strong> Strict data isolation between client matters while supporting firm-wide search and reporting — solved through row-level security policies and role-scoped query layers.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> Laravel · MySQL · REST API · Bootstrap &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
-          </p>
-        `,
+              <p>A comprehensive legal practice management system designed to streamline case management, document handling, and client communications for a legal services firm.</p>
+              <ul>
+                <li><strong>Case Management:</strong> Complete case lifecycle tracking from initial consultation to closure with milestone reminders</li>
+                <li><strong>Document Storage:</strong> Secure document management with version control, client-specific folders, and encrypted storage</li>
+                <li><strong>Client Portal:</strong> Secure channel for clients to view case status, download documents, and message their attorneys</li>
+                <li><strong>Role-Based Access:</strong> Granular permissions for partners, associates, paralegals, and administrative staff</li>
+                <li><strong>Calendar Integration:</strong> Court dates, client meetings, and filing deadlines with automatic reminders</li>
+                <li><strong>Billing Module:</strong> Time tracking, invoice generation, and payment processing for legal services</li>
+                <li><strong>Full-Text Search:</strong> Fast search across all cases and documents for quick information retrieval</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Implementing strict data privacy compliance while maintaining ease of access for authorized personnel.</p>
+              <p><strong>Tech Stack:</strong> Laravel · MySQL · REST API · Bootstrap<br>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+            `,
         },
         {
             title: "Shipment Tracking CRM",
-            type: "Professional",
+            type: "Logistics Software",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Logistics CRM unifying multiple carrier APIs into one real-time tracking interface — WebSocket live updates, automated invoicing, SMS/email alerts, and a self-service customer portal.",
+            description: "Unified multi-carrier tracking with WebSocket updates, automated invoicing, and a self-service customer portal.",
             image: "",
-            placeholderColor: "#FAEEDA",
             id: "shipment-tracking",
-            detailsLink: "#",
-            filterClass: "filter-professional",
-            techStack: ["Laravel", "External APIs", "WebSockets", "MySQL"],
-            detail_title: "Shipment Tracking CRM – Fovty Solutions",
+            techStack: ["Laravel", "WebSockets", "External APIs", "MySQL"],
+            detail_title: "Shipment Tracking CRM – Logistics Management Platform",
             detail_description: `
-          <p>
-            A logistics management platform that consolidates tracking data from multiple carrier APIs into a single normalized interface — eliminating the manual overhead of cross-checking courier dashboards and automating the invoicing and notification workflow around every shipment.
-          </p>
-          <ul>
-            <li><strong>Multi-Carrier API Integration:</strong> Consumes tracking feeds from multiple logistics providers; a normalization layer translates inconsistent status schemas into a unified internal model without losing carrier-specific detail</li>
-            <li><strong>Real-Time WebSocket Updates:</strong> Live shipment status pushed to the browser — no polling, no page refresh, no stale data</li>
-            <li><strong>Automated Invoice Generation:</strong> Invoices generated dynamically based on weight, dimensions, distance tier, and service type — exported as print-ready PDFs</li>
-            <li><strong>Customer Self-Service Portal:</strong> Public-facing tracking page where end customers enter a shipment ID to view their full delivery timeline and history</li>
-            <li><strong>Notification Engine:</strong> Configurable email and SMS alerts at key milestones — dispatch, in-transit, out-for-delivery, and delivered</li>
-            <li><strong>Analytics Dashboard:</strong> Delivery KPIs including on-time rate, average transit time, delay reasons, and carrier-level performance comparisons</li>
-          </ul>
-          <p>
-            <strong>Key Engineering Challenge:</strong> Each carrier returns events in a different format with different status codes and timestamp conventions — the normalization pipeline maps all of them to a consistent internal schema.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> Laravel · External APIs · WebSockets · AJAX · MySQL &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
-          </p>
-        `,
+              <p>A comprehensive shipment tracking and logistics management system providing real-time parcel tracking integrated with multiple logistics provider APIs.</p>
+              <ul>
+                <li><strong>Multi-Carrier Integration:</strong> Unified tracking across major logistics providers with standardized status updates</li>
+                <li><strong>Real-Time Updates:</strong> WebSocket-powered live tracking status without page refresh</li>
+                <li><strong>Automated Invoicing:</strong> Dynamic invoice generation based on weight, distance, and service type with PDF export</li>
+                <li><strong>Analytics Dashboard:</strong> Delivery performance metrics, delay analysis, and customer satisfaction tracking</li>
+                <li><strong>Automated Notifications:</strong> Email and SMS alerts for shipment status changes at key milestones</li>
+                <li><strong>API Gateway:</strong> RESTful API for third-party integrations and e-commerce platform connections</li>
+                <li><strong>Client Portal:</strong> Self-service tracking page for end customers with full shipment history</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Normalizing inconsistent tracking data formats from multiple carrier APIs into a unified system.</p>
+              <p><strong>Tech Stack:</strong> Laravel · WebSockets · External Carrier APIs · MySQL<br>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+            `,
         },
         {
             title: "Leads & CRM Automation",
-            type: "Professional",
+            type: "CRM / Automation",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Extended Prefex CRM with a configurable automation engine — smart lead assignment, follow-up scheduling, field operations coordination, and escalation workflows.",
+            description: "Extended Prefex CRM with smart lead assignment, SLA-based escalation, and field operations coordination.",
             image: "",
-            placeholderColor: "#EEEDFE",
             id: "leads-crm",
-            detailsLink: "#",
-            filterClass: "filter-professional",
             techStack: ["Laravel", "PHP", "AJAX", "MySQL"],
-            detail_title: "Leads & CRM Automation – Fovty Solutions",
+            detail_title: "Leads & CRM Automation – Intelligent Lead Management System",
             detail_description: `
-          <p>
-            An extensive customization of the Prefex CRM platform that adds an intelligent automation layer on top of the core lead management system — built for a field-operations-heavy business where manual follow-up tracking was creating measurable revenue leakage.
-          </p>
-          <ul>
-            <li><strong>Smart Lead Assignment:</strong> Automated distribution engine routes inbound leads based on territory, agent workload, and recent conversion performance — no manual dispatcher needed</li>
-            <li><strong>Follow-Up Automation:</strong> Rule-driven reminder system with escalating notifications for overdue follow-ups; automatic escalation to managers past a configurable SLA window</li>
-            <li><strong>Field Operations Module:</strong> Site visit scheduling with route optimization, GPS check-in verification, and structured post-visit reporting for field agents</li>
-            <li><strong>Configurable Business Rules:</strong> Non-technical admins configure assignment rules, SLA thresholds, and escalation chains through a UI — no code changes needed for business process updates</li>
-            <li><strong>Pipeline Analytics:</strong> Lead-to-close funnel metrics by agent, territory, and lead source — surfaces exactly where conversions are dropping</li>
-            <li><strong>Mobile-Optimized Interface:</strong> Responsive layout for field agents updating lead status from a phone between site visits</li>
-          </ul>
-          <p>
-            <strong>Key Engineering Challenge:</strong> Building an automation rule engine flexible enough to encode real business logic without requiring a developer for every policy change.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> Laravel · PHP · AJAX · MySQL &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
-          </p>
-        `,
+              <p>An enhanced version of the Prefex CRM with intelligent automation for lead management, follow-up workflows, and field operations coordination.</p>
+              <ul>
+                <li><strong>Smart Lead Assignment:</strong> Automated lead distribution based on territory, agent performance, and availability</li>
+                <li><strong>Follow-Up Automation:</strong> Configurable reminder schedules with email and in-app notifications for missed follow-ups</li>
+                <li><strong>Site Operations Manager:</strong> Field staff scheduling with route optimization and visit verification</li>
+                <li><strong>Role-Based Permissions:</strong> Customizable access levels for managers, agents, and field staff</li>
+                <li><strong>Conversion Analytics:</strong> Lead-to-cash pipeline tracking with conversion rate insights</li>
+                <li><strong>Escalation Engine:</strong> Automatic escalation of stale leads and overdue tasks to managers</li>
+                <li><strong>Mobile Optimization:</strong> Responsive interface for field agents to update leads on-the-go</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Building a flexible automation engine that handles complex business rules while remaining user-configurable.</p>
+              <p><strong>Tech Stack:</strong> Laravel · PHP · AJAX · MySQL<br>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+            `,
         },
         {
             title: "Business Idea Marketplace",
-            type: "Professional",
+            type: "Marketplace Platform",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Two-sided marketplace for buying and selling startup concepts — Stripe escrow, NDA-gated document release, admin moderation, and an in-platform offer negotiation system.",
+            description: "Two-sided marketplace with Stripe escrow, NDA-gated document release, and in-platform offer negotiation.",
             image: "",
-            placeholderColor: "#E1F5EE",
             id: "idea-marketplace",
-            detailsLink: "#",
-            filterClass: "filter-professional",
             techStack: ["Node.js", "React", "MongoDB", "Stripe API"],
-            detail_title: "Business Idea Marketplace – Fovty Solutions",
+            detail_title: "Business Idea Marketplace – Two-Sided Idea Trading Platform",
             detail_description: `
-          <p>
-            A two-sided marketplace where entrepreneurs list validated startup concepts and investors or aspiring founders browse, negotiate, and acquire them. The core engineering challenge was building enough trust infrastructure — escrow payments, IP protection, identity gating — for strangers to transact confidently on abstract ideas.
-          </p>
-          <ul>
-            <li><strong>Seller Dashboard:</strong> Full listing workspace — structured submissions with business model canvas, market sizing, competitive analysis, and financial projections</li>
-            <li><strong>Discovery & Search:</strong> Filtered browse by industry vertical, capital requirement, business model type, and seller credibility score</li>
-            <li><strong>Stripe Escrow Payments:</strong> Funds held in escrow at checkout; released to seller only after buyer confirms receipt of all promised assets — with a built-in dispute window</li>
-            <li><strong>NDA-Gated Documents:</strong> Detailed plans and financials locked behind a countersigned NDA flow; watermarked PDFs prevent unauthorized redistribution after signing</li>
-            <li><strong>Negotiation System:</strong> Structured offer/counter-offer messaging with offer history, expiry timers, and deal status tracking separate from general chat</li>
-            <li><strong>Admin Moderation Queue:</strong> Content review workflow to vet listings for completeness and flag potential IP issues before they go live</li>
-            <li><strong>Platform Analytics:</strong> Admin dashboard tracking GMV, active listing inventory, average time-to-close, and buyer/seller engagement metrics</li>
-          </ul>
-          <p>
-            <strong>Key Engineering Challenge:</strong> Designing a transaction flow that protects both buyer (getting what was promised) and seller (not giving away IP before payment) — solved through phased escrow logic and staged document release.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> Node.js · React · MongoDB · Stripe API &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
-          </p>
-        `,
+              <p>A two-sided marketplace where entrepreneurs can list, browse, and purchase startup concepts and business ideas — with escrow payments and IP protection built in.</p>
+              <ul>
+                <li><strong>Seller Dashboard:</strong> Complete workspace for creating, managing, and updating idea listings</li>
+                <li><strong>Browse & Search:</strong> Advanced filtering by industry, investment range, and business type</li>
+                <li><strong>Secure Payments:</strong> Full Stripe integration with checkout, subscriptions, and escrow support</li>
+                <li><strong>Idea Submissions:</strong> Structured submission forms with business model canvas and market analysis</li>
+                <li><strong>Admin Moderation:</strong> Content review workflow to ensure quality and prevent IP infringement</li>
+                <li><strong>Negotiation System:</strong> In-platform messaging and offer management for buyer-seller discussions</li>
+                <li><strong>IP Protection:</strong> Document watermarking and NDA-gated secure file sharing</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Building trust between buyers and sellers while protecting intellectual property throughout the transaction lifecycle.</p>
+              <p><strong>Tech Stack:</strong> Node.js · React · MongoDB · Stripe API<br>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+            `,
         },
         {
             title: "AI Career Platform",
-            type: "Professional",
+            type: "AI / SaaS",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Full-stack AI career product — ATS-optimized resume generation, LinkedIn profile analysis, AI headshot enhancement, LLM-written cover letters, and a Kanban job application tracker.",
+            description: "ATS resume builder, LinkedIn optimizer, AI headshots, LLM cover letters, and a Kanban job tracker.",
             image: "",
-            placeholderColor: "#EEEDFE",
             id: "ai-career",
-            detailsLink: "#",
-            filterClass: "filter-professional",
-            techStack: ["Node.js", "React", "OpenAI API", "MongoDB", "Python"],
-            detail_title: "AI Career Platform – Fovty Solutions",
+            techStack: ["Node.js", "React", "OpenAI API", "Python", "MongoDB"],
+            detail_title: "AI Career Platform – All-in-One Job Search Tool",
             detail_description: `
-          <p>
-            A full-stack AI product consolidating every tool a modern job seeker needs into one platform. Integrates multiple AI providers — LLMs, image models, and Python inference — to deliver personalized, high-quality career content rather than generic templates.
-          </p>
-          <ul>
-            <li><strong>ATS Resume Builder:</strong> Generates keyword-optimized resumes tailored to a target job description — formatted to pass applicant tracking systems with selectable visual templates</li>
-            <li><strong>LinkedIn Optimizer:</strong> Analyzes the user's profile against industry benchmarks and delivers specific rewrites for headline, about section, and experience bullets</li>
-            <li><strong>AI Headshot Enhancement:</strong> Transforms casual photos into professional-grade headshots using image generation models — no photoshoot required</li>
-            <li><strong>Cover Letter Engine:</strong> Produces bespoke cover letters from a job description, company context, and user background — structured LLM prompting ensures relevance over generic output</li>
-            <li><strong>Application Tracker:</strong> Kanban pipeline managing open applications through stages — applied → phone screen → interview → offer — with reminders at each stage</li>
-            <li><strong>Interview Prep:</strong> Role-specific and company-specific practice questions with suggested answer frameworks generated on demand</li>
-            <li><strong>Job Alert Engine:</strong> Personalized notifications for new postings matching skill set, seniority, and location preferences</li>
-          </ul>
-          <p>
-            <strong>Key Engineering Challenge:</strong> Orchestrating multiple AI services under a single user request while maintaining sub-3-second response times and consistent output quality across models.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> Node.js · React · OpenAI API · MongoDB · Python &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
-          </p>
-        `,
+              <p>An all-in-one AI-powered career development platform that helps job seekers create professional resumes, optimize their LinkedIn presence, and track applications.</p>
+              <ul>
+                <li><strong>AI Resume Builder:</strong> Dynamic resume generation with multiple templates, keyword optimization, and ATS-friendly formatting</li>
+                <li><strong>LinkedIn Optimizer:</strong> AI analysis of profiles with suggestions for headline, summary, and experience sections</li>
+                <li><strong>Headshot Generation:</strong> AI-enhanced professional headshot creation from casual photos</li>
+                <li><strong>Application Tracker:</strong> Kanban-style pipeline for managing job applications with interview reminders</li>
+                <li><strong>Cover Letter Generator:</strong> Custom cover letters tailored to each job description using LLM technology</li>
+                <li><strong>Interview Prep:</strong> AI-generated practice questions based on target role and company</li>
+                <li><strong>Analytics Dashboard:</strong> Application metrics, response rates, and career progress tracking</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Integrating multiple AI services while maintaining fast response times and ensuring output quality.</p>
+              <p><strong>Tech Stack:</strong> Node.js · React · OpenAI API · Python · MongoDB<br>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+            `,
         },
         {
             title: "LinkedIn Automation Extension",
-            type: "Professional",
+            type: "Browser Extension",
             client: "Fovty Solutions",
             project_link: "#",
-            description: "Chrome extension for recruiters — profile scraping, personalized connection campaigns, timezone-aware outreach scheduling, ATS export, and rate-limiting to protect the account.",
+            description: "Chrome extension for recruiters — profile scraping, connection campaigns, timezone-aware scheduling, ATS export.",
             image: "",
-            placeholderColor: "#EEEDFE",
             id: "linkedin-automation",
-            detailsLink: "#",
-            filterClass: "filter-professional",
-            techStack: ["JavaScript", "Puppeteer", "Python", "Chrome API"],
-            detail_title: "LinkedIn Automation Extension – Fovty Solutions",
+            techStack: ["JavaScript", "Chrome API", "Puppeteer", "Python"],
+            detail_title: "LinkedIn Automation Extension – Recruiter Outreach Tool",
             detail_description: `
-          <p>
-            A Chrome extension that gives recruiters programmatic control over their LinkedIn outreach — from candidate discovery and data extraction through personalized connection campaigns and response tracking. Account safety is a first-class concern throughout.
-          </p>
-          <ul>
-            <li><strong>Profile Extraction:</strong> One-click scraping of candidate profiles — work history, skills, education, and contact details — without leaving the current page</li>
-            <li><strong>Bulk Data Export:</strong> Export collected candidates to CSV, JSON, or push directly to an ATS integration endpoint for pipeline import</li>
-            <li><strong>Personalized Campaigns:</strong> Template-based connection requests with per-recipient variable substitution (name, company, role) and configurable multi-step follow-up sequences</li>
-            <li><strong>Timezone-Aware Scheduling:</strong> Outreach messages queued and delivered during the recipient's local business hours — measurably improves response rates</li>
-            <li><strong>Engagement Analytics:</strong> Tracks connection acceptance rates and reply rates per campaign and per template variant</li>
-            <li><strong>Account Safety Layer:</strong> Configurable daily action limits, randomized delays between actions, and session rotation to stay within LinkedIn's behavioral thresholds</li>
-            <li><strong>Local-First Data:</strong> All candidate data stored locally by default; optional encrypted cloud sync for team sharing</li>
-          </ul>
-          <p>
-            <strong>Key Engineering Challenge:</strong> Building automation that is fast and reliable enough to be useful while staying within LinkedIn's detection thresholds — required careful study of rate limits and session fingerprinting behavior.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> JavaScript · Chrome Extension APIs · Puppeteer · Python &nbsp;|&nbsp; <strong>Client:</strong> Fovty Solutions &nbsp;|&nbsp; <em>Private – NDA Protected</em>
-          </p>
-        `,
+              <p>A Chrome extension for recruiters to efficiently extract professional profile data and automate connection and outreach workflows on LinkedIn.</p>
+              <ul>
+                <li><strong>Profile Extraction:</strong> One-click scraping of candidate profiles including work history, skills, and contact info</li>
+                <li><strong>Data Export:</strong> Export collected data to CSV, JSON, or directly to ATS integrations</li>
+                <li><strong>Auto-Connect:</strong> Personalized connection requests with template customization and follow-up sequences</li>
+                <li><strong>Outreach Automation:</strong> Automated messaging campaigns with personalization tokens</li>
+                <li><strong>Schedule Outreach:</strong> Time-optimized message delivery based on recipient timezone</li>
+                <li><strong>Engagement Tracking:</strong> Monitor connection acceptance rates and message response rates</li>
+                <li><strong>Safety Features:</strong> Rate limiting, random delays, and session rotation to prevent account restrictions</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Building reliable automation that respects platform limits while providing meaningful recruiter productivity gains.</p>
+              <p><strong>Tech Stack:</strong> JavaScript · Chrome Extension API · Puppeteer · Python<br>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+            `,
         },
         {
             title: "Recommendation System",
-            type: "Professional",
+            type: "Machine Learning",
             client: "Allsoft Solutions",
             project_link: "#",
-            description: "Production-grade collaborative filtering engine with a Flask REST API — user-based and item-based CF, hyperparameter tuning, offline evaluation, and an A/B testing framework.",
+            description: "Collaborative filtering engine (user-based + item-based CF) with Flask API, hyperparameter tuning, and an A/B testing framework.",
             image: "",
-            placeholderColor: "#EAF3DE",
             id: "recommendation-system",
-            detailsLink: "#",
-            filterClass: "filter-professional",
             techStack: ["Python", "Flask", "Scikit-learn", "Pandas"],
-            detail_title: "Recommendation System – Allsoft Solutions",
+            detail_title: "Recommendation System – Collaborative Filtering Engine",
             detail_description: `
-          <p>
-            A production-grade recommendation engine developed during my internship at Allsoft Solutions. Implements both user-based and item-based collaborative filtering, exposed through a REST API — designed to handle thousands of concurrent users at real-time latency.
-          </p>
-          <ul>
-            <li><strong>Dual CF Algorithms:</strong> Both user-based (find similar users, recommend their items) and item-based (find similar items to what the user liked) CF — configurable weighting between the two for tuning relevance vs. serendipity</li>
-            <li><strong>End-to-End Data Pipeline:</strong> Raw interaction data → cleaning → normalization → sparse matrix construction → model training — fully reproducible and re-runnable on refreshed data</li>
-            <li><strong>Hyperparameter Tuning:</strong> Grid search over similarity metrics (cosine, Pearson, Jaccard) and neighborhood sizes using cross-validation to maximize precision@k</li>
-            <li><strong>Flask REST API:</strong> <code>/recommend</code> endpoint returns a ranked item list for a given user ID — configurable result count, latency-optimized with precomputed similarity caches</li>
-            <li><strong>Offline Evaluation:</strong> Model quality measured with precision, recall, F1-score, and NDCG across multiple test folds before any live deployment</li>
-            <li><strong>A/B Testing Framework:</strong> Traffic-splitting infrastructure to run model variants in parallel and compare recommendation quality on live user interactions</li>
-            <li><strong>Scalable Storage:</strong> Sparse matrix representations keep memory footprint manageable as user and item counts grow into the thousands</li>
-          </ul>
-          <p>
-            <strong>Key Engineering Challenge:</strong> Keeping recommendation latency under 200ms for large user-item matrices — solved through precomputed similarity caches refreshed on a background schedule rather than computed on-request.
-          </p>
-          <p>
-            <strong>Tech Stack:</strong> Python · Flask · Scikit-learn · Pandas · NumPy &nbsp;|&nbsp; <strong>Client:</strong> Allsoft Solutions (Internship) &nbsp;|&nbsp; <em>Private</em>
-          </p>
-        `,
+              <p>A collaborative filtering-based recommendation engine developed during my internship, designed to analyze user behavior and provide personalized product suggestions at scale.</p>
+              <ul>
+                <li><strong>ML Algorithm:</strong> User-based and item-based collaborative filtering for personalized recommendations</li>
+                <li><strong>Data Pipeline:</strong> End-to-end preprocessing including cleaning, transformation, and feature engineering</li>
+                <li><strong>Model Optimization:</strong> Hyperparameter tuning and cross-validation to improve recommendation accuracy</li>
+                <li><strong>REST API:</strong> Flask-based API endpoints for real-time recommendation retrieval</li>
+                <li><strong>Performance Metrics:</strong> Evaluation using precision, recall, and F1-score for model validation</li>
+                <li><strong>Scalable Storage:</strong> Efficient data structures for handling large user-item interaction matrices</li>
+                <li><strong>A/B Testing Framework:</strong> Setup for testing recommendation quality with live user feedback loops</li>
+              </ul>
+              <p><strong>Key Challenge:</strong> Building a recommendation engine that scales to thousands of users while maintaining real-time response times.</p>
+              <p><strong>Tech Stack:</strong> Python · Flask · Scikit-learn · Pandas<br>
+              <strong>Company:</strong> Allsoft Solutions (Internship) — <em>NDA Protected</em></p>
+            `,
         },
     ];
 
@@ -455,31 +437,43 @@
     const projectId = urlParams.get("id");
 
     if (projectId) {
-        // Find the matching project
-        const project = projects.find((item) => item.id === projectId);
+        const project = [...projects, ...professionalProjects].find((item) => item.id === projectId);
 
         if (project) {
-            // Set image
-            document.querySelector(".swiper-slide img").src = '../' + project.image;
+            // Image — hide swiper if no image
+            const swiperSection = document.querySelector(".portfolio-details-slider");
+            if (project.image) {
+                document.querySelector(".swiper-slide img").src = '../' + project.image;
+            } else {
+                swiperSection.style.display = "none";
+            }
 
-            // Set project info
-            const infoList = document.querySelector(".portfolio-info ul");
-            infoList.innerHTML = `
-        <li><strong>Category</strong>: ${project.type}</li>
-        <li><strong>Client</strong>: ${project.client}</li>
-        <li><strong>Project URL</strong>: <a href="${project.project_link}" target="_blank">${project.project_link}</a></li>
-      `;
+            // Tech stack badges
+            const techBadges = (project.techStack || [])
+                .map(t => `<span class="badge badge-tech me-1 mb-1">${t}</span>`)
+                .join('');
 
-            // Set title and description
-            document.querySelector(".portfolio-description h2").textContent =
-                project.detail_title;
-            document.querySelector(".portfolio-description p").innerHTML =
-                project.detail_description;
+            // Live link — show only if it's a real URL
+            const liveLink = project.project_link && project.project_link !== '#'
+                ? `<a href="${project.project_link}" target="_blank" class="btn btn-primary btn-sm mt-3">
+                     <i class="bi bi-box-arrow-up-right me-1"></i> View Live
+                   </a>`
+                : `<span class="badge bg-secondary mt-3 d-inline-block">No live demo</span>`;
+
+            // Info sidebar
+            document.querySelector(".portfolio-info ul").innerHTML = `
+                <li><strong>Category</strong>: ${project.type}</li>
+                <li><strong>Client</strong>: ${project.client}</li>
+                <li class="mt-2"><strong>Tech Stack</strong><br><div class="mt-1">${techBadges}</div></li>
+                <li class="mt-2">${liveLink}</li>
+            `;
+
+            // Title + description
+            document.querySelector(".portfolio-description h2").textContent = project.detail_title;
+            document.querySelector(".portfolio-description div").innerHTML = project.detail_description;
         } else {
-            // If no match is found
-            document.querySelector(".portfolio-description h2").textContent =
-                "Project not found";
-            document.querySelector(".portfolio-description p").textContent =
+            document.querySelector(".portfolio-description h2").textContent = "Project not found";
+            document.querySelector(".portfolio-description div").textContent =
                 "We couldn't find any project matching the ID in the URL.";
         }
     }
@@ -674,68 +668,37 @@
         projects.forEach((project) => {
             const projectElement = document.createElement("div");
             projectElement.classList.add(
-                "col-lg-4",
+                "col-lg-6",
                 "col-md-6",
                 "portfolio-item",
                 "isotope-item",
                 project.filterClass
             );
 
-            // Check if this is a professional project with placeholder
-            if (project.placeholderColor) {
-                // Get SVG icon based on project type
-                let svgIcon = getProjectIcon(project.id);
-                let badgeHtml = project.badge ? `<span class="badge ${project.badgeClass}">${project.badge}</span>` : '';
-                let techStackHtml = project.techStack ? project.techStack.join(' · ') : '';
-                
-                projectElement.innerHTML = `
-        <div class="portfolio-content h-100">
-          <div class="portfolio-placeholder" style="background: ${project.placeholderColor}; height: 200px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
-            ${svgIcon}
+            const techBadges = (project.techStack || [])
+                .map(t => `<span class="badge badge-tech me-1">${t}</span>`)
+                .join('');
+
+            projectElement.innerHTML = `
+        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+          <div class="flex-grow-1">
+            <h6 class="fw-semibold mb-1">${project.title}</h6>
+            <p class="text-muted small mb-2">${project.description}</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">${techBadges}</div>
           </div>
-          <div class="portfolio-info">
-            <h4>${project.title}</h4>
-            <p>${techStackHtml}</p>
-            ${badgeHtml}
-            <a href="#" title="More Details" data-bs-toggle="modal" data-bs-target="#project-${project.id}" class="details-link">
-              <i class="bi bi-link-45deg"></i>
-            </a>
+          <div>
+            <a href="${project.detailsLink}" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
           </div>
         </div>
       `;
-            } else {
-                projectElement.innerHTML = `
-        <div class="portfolio-content h-100">
-          <img src="${project.image}" class="img-fluid" alt="${project.title}" />
-          <div class="portfolio-info">
-            <h4>${project.title}</h4>
-            <p>${project.description}</p>
-            <a href="${project.image}" title="${project.title}" data-gallery="portfolio-gallery-${project.type.toLowerCase()}" class="glightbox preview-link">
-              <i class="bi bi-zoom-in"></i>
-            </a>
-            <a href="${project.detailsLink}" title="More Details" class="details-link">
-              <i class="bi bi-link-45deg"></i>
-            </a>
-          </div>
-        </div>
-      `;
-            }
 
             container.appendChild(projectElement);
         });
     }
 
-    // Function to get SVG icon based on project
     function getProjectIcon(projectId) {
         const icons = {
-            'pos-crm': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>',
-            'law-firm': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1565C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>',
-            'shipment-tracking': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F57C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>',
-            'leads-crm': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B1FA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
-            'idea-marketplace': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>',
-            'ai-career': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B1FA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"></path><path d="M12 12l8-8"></path><circle cx="12" cy="12" r="3"></circle></svg>',
-            'linkedin-automation': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7B1FA2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>',
-            'recommendation-system': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#558B2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>'
+            'compresso': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>',
         };
         return icons[projectId] || '<i class="bi bi-folder" style="font-size: 2rem;"></i>';
     }

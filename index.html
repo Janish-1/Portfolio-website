@@ -75,6 +75,9 @@
                     <a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a>
                 </li>
                 <li>
+                    <a href="#professional-work"><i class="bi bi-briefcase navicon"></i> Work</a>
+                </li>
+                <li>
                     <a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a>
                 </li>
                 <li>
@@ -602,15 +605,15 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Portfolio</h2>
-                <p>My technical projects across web development, machine learning, and system tools</p>
+                <p>Personal projects — open source, experiments, and shipped tools</p>
             </div>
             <!-- End Section Title -->
 
             <div class="container">
-                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
                     <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
                         <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-professional">Professional</li>
+                        <li data-filter=".filter-desktop">Desktop</li>
                         <li data-filter=".filter-mlai">AI & ML</li>
                         <li data-filter=".filter-api">API</li>
                         <li data-filter=".filter-extension">Extension</li>
@@ -626,274 +629,177 @@
         </section>
         <!-- /Portfolio Section -->
 
-        <!-- Professional Project Modals -->
-        
-        <!-- Modal 1: POS & CRM System -->
-        <div class="modal fade" id="project-pos-crm" tabindex="-1" aria-labelledby="project-pos-crm-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-pos-crm-label">POS & CRM System</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>A comprehensive point-of-sale and customer relationship management system designed for a food chain operation. This system handles order management, inventory tracking, and daily transaction reporting with real-time analytics.</p>
-                        <ul>
-                            <li>🛒 <strong>Order Management:</strong> Streamlined POS interface for processing dine-in, takeout, and catering orders with split payment support</li>
-                            <li>📦 <strong>Inventory Tracking:</strong> Real-time inventory updates with low-stock alerts and automated reordering suggestions</li>
-                            <li>📊 <strong>Daily Reporting:</strong> Comprehensive sales reports, profit margin analysis, and staff performance metrics</li>
-                            <li>👨‍🍳 <strong>Staff Management:</strong> Role-based access for managers, cashiers, and kitchen staff with shift scheduling</li>
-                            <li>📱 <strong>Catering Module:</strong> Special handling for bulk catering orders with advance booking and custom menu options</li>
-                            <li>🔄 <strong>Data Sync:</strong> Multi-branch support with centralized database for chain-wide inventory and sales visibility</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Handling peak-hour concurrency while maintaining data integrity across multiple POS terminals.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">Laravel</span>
-                            <span class="badge bg-primary">MySQL</span>
-                            <span class="badge bg-primary">jQuery</span>
-                            <span class="badge bg-primary">Bootstrap</span>
-                        </div>
-                        <p><strong>Company:</strong> Fovty Solutions</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
-                    </div>
-                </div>
+        <!-- Professional Work Section -->
+        <section id="professional-work" class="section light-background">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Professional Work</h2>
+                <p>Client systems built under NDA — details available on request</p>
             </div>
-        </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Modal 2: Law Firm Management System -->
-        <div class="modal fade" id="project-law-firm" tabindex="-1" aria-labelledby="project-law-firm-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-law-firm-label">Law Firm Management System</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>A comprehensive legal practice management system designed to streamline case management, document handling, and client communications for a legal services firm.</p>
-                        <ul>
-                            <li>📁 <strong>Case Management:</strong> Complete case lifecycle tracking from initial consultation to case closure with milestone reminders</li>
-                            <li>📄 <strong>Document Storage:</strong> Secure document management with version control, client-specific folders, and encrypted storage</li>
-                            <li>💬 <strong>Client Portal:</strong> Secure communication channel for clients to view case status, download documents, and message their attorneys</li>
-                            <li>👥 <strong>Role-Based Access:</strong> Granular permissions for partners, associates, paralegals, and administrative staff</li>
-                            <li>📅 <strong>Calendar Integration:</strong> Court dates, client meetings, and filing deadlines with automatic reminders</li>
-                            <li>💰 <strong>Billing Module:</strong> Time tracking, invoice generation, and payment processing for legal services</li>
-                            <li>🔍 <strong>Search Functionality:</strong> Powerful full-text search across all cases and documents for quick information retrieval</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Implementing strict data privacy compliance while maintaining ease of access for authorized personnel.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">Laravel</span>
-                            <span class="badge bg-primary">MySQL</span>
-                            <span class="badge bg-primary">REST API</span>
-                            <span class="badge bg-primary">Bootstrap</span>
-                        </div>
-                        <p><strong>Company:</strong> Fovty Solutions</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <!-- Fovty Solutions -->
+                <h5 class="text-muted fw-semibold mb-3">
+                    <i class="bi bi-building me-2"></i>Fovty Solutions
+                </h5>
+                <div class="row gy-3 mb-4">
 
-        <!-- Modal 3: Shipment Tracking CRM -->
-        <div class="modal fade" id="project-shipment-tracking" tabindex="-1" aria-labelledby="project-shipment-tracking-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-shipment-tracking-label">Shipment Tracking CRM</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>A comprehensive shipment tracking and logistics management system that provides real-time parcel tracking integrated with multiple logistics provider APIs.</p>
-                        <ul>
-                            <li>📦 <strong>Multi-Carrier Integration:</strong> Unified tracking across major logistics providers with standardized status updates</li>
-                            <li>🔄 <strong>Real-Time Updates:</strong> WebSocket-powered live tracking status updates without page refresh</li>
-                            <li>📄 <strong>Automated Invoices:</strong> Dynamic invoice generation based on weight, distance, and service type with PDF export</li>
-                            <li>📊 <strong>Analytics Dashboard:</strong> Delivery performance metrics, delay analysis, and customer satisfaction tracking</li>
-                            <li>📧 <strong>Automated Notifications:</strong> Email and SMS alerts for shipment status changes at key milestones</li>
-                            <li>🔗 <strong>API Gateway:</strong> RESTful API for third-party integrations and e-commerce platform connections</li>
-                            <li>👤 <strong>Client Portal:</strong> Self-service tracking page for end customers with shipment history</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Handling inconsistent tracking data formats from multiple carrier APIs and normalizing them into a unified system.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">Laravel</span>
-                            <span class="badge bg-primary">External APIs</span>
-                            <span class="badge bg-primary">AJAX</span>
-                            <span class="badge bg-primary">MySQL</span>
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">POS &amp; CRM System</h6>
+                                <p class="text-muted small mb-2">Multi-terminal point-of-sale and CRM for a food chain — real-time inventory, multi-branch sync, peak-hour concurrency.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">Laravel</span>
+                                    <span class="badge badge-tech">MySQL</span>
+                                    <span class="badge badge-tech">jQuery</span>
+                                    <span class="badge badge-tech">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=pos-crm" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
                         </div>
-                        <p><strong>Company:</strong> Fovty Solutions</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Modal 4: Leads & CRM Automation -->
-        <div class="modal fade" id="project-leads-crm" tabindex="-1" aria-labelledby="project-leads-crm-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-leads-crm-label">Leads & CRM Automation</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>An enhanced version of the Prefex CRM system with intelligent automation features for lead management, follow-up workflows, and field operations coordination.</p>
-                        <ul>
-                            <li>🎯 <strong>Smart Lead Assignment:</strong> Automated lead distribution based on territory, agent performance, and availability</li>
-                            <li>⏰ <strong>Follow-Up Automation:</strong> Configurable reminder schedules with email and in-app notifications for missed follow-ups</li>
-                            <li>📍 <strong>Site Operations Manager:</strong> Field staff scheduling with route optimization and visit verification</li>
-                            <li>👷 <strong>Role-Based Permissions:</strong> Customizable access levels for managers, agents, and field staff</li>
-                            <li>📈 <strong>Conversion Analytics:</strong> Lead-to-cash pipeline tracking with conversion rate insights</li>
-                            <li>🔔 <strong>Escalation Engine:</strong> Automatic escalation of stale leads and overdue tasks to managers</li>
-                            <li>📱 <strong>Mobile Optimization:</strong> Responsive interface for field agents to update leads on-the-go</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Building a flexible automation engine that could handle complex business rules while remaining user-configurable.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">Laravel</span>
-                            <span class="badge bg-primary">PHP</span>
-                            <span class="badge bg-primary">AJAX</span>
-                            <span class="badge bg-primary">MySQL</span>
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">Law Firm Management System</h6>
+                                <p class="text-muted small mb-2">End-to-end legal practice management — case lifecycle, encrypted document storage, client portal, and billing.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">Laravel</span>
+                                    <span class="badge badge-tech">MySQL</span>
+                                    <span class="badge badge-tech">REST API</span>
+                                    <span class="badge badge-tech">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=law-firm" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
                         </div>
-                        <p><strong>Company:</strong> Fovty Solutions</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Modal 5: Business Idea Marketplace -->
-        <div class="modal fade" id="project-idea-marketplace" tabindex="-1" aria-labelledby="project-idea-marketplace-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-idea-marketplace-label">Business Idea Marketplace</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>A two-sided marketplace platform where entrepreneurs can list, browse, and purchase innovative startup concepts and business ideas.</p>
-                        <ul>
-                            <li>🏪 <strong>Seller Dashboard:</strong> Complete workspace for sellers to create, manage, and update their idea listings</li>
-                            <li>🛒 <strong>Browse & Search:</strong> Advanced filtering by industry, investment range, and business type</li>
-                            <li>💳 <strong>Secure Payments:</strong> Full Stripe integration with checkout, subscriptions, and escrow support</li>
-                            <li>📝 <strong>Idea Submissions:</strong> Structured submission forms with business model canvas and market analysis</li>
-                            <li>🛡️ <strong>Admin Moderation:</strong> Content review workflow to ensure quality and prevent IP infringement</li>
-                            <li>💬 <strong>Negotiation System:</strong> In-platform messaging and offer management for buyer-seller discussions</li>
-                            <li>📊 <strong>Analytics:</strong> Platform-wide metrics for admin including GMV, active listings, and user engagement</li>
-                            <li>🔐 <strong>IP Protection:</strong> Document watermarking and secure file sharing with NDA support</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Building trust between buyers and sellers while protecting intellectual property throughout the transaction.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">Node.js</span>
-                            <span class="badge bg-primary">React</span>
-                            <span class="badge bg-primary">MongoDB</span>
-                            <span class="badge bg-primary">Stripe API</span>
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">Shipment Tracking CRM</h6>
+                                <p class="text-muted small mb-2">Unified multi-carrier tracking with WebSocket updates, automated invoicing, and a self-service customer portal.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">Laravel</span>
+                                    <span class="badge badge-tech">External APIs</span>
+                                    <span class="badge badge-tech">WebSockets</span>
+                                    <span class="badge badge-tech">MySQL</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=shipment-tracking" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
                         </div>
-                        <p><strong>Company:</strong> Fovty Solutions</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Modal 6: AI Career Platform -->
-        <div class="modal fade" id="project-ai-career" tabindex="-1" aria-labelledby="project-ai-career-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-ai-career-label">AI Career Platform</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>An all-in-one AI-powered career development platform that helps job seekers create professional resumes, optimize their LinkedIn presence, and track job applications.</p>
-                        <ul>
-                            <li>📄 <strong>AI Resume Builder:</strong> Dynamic resume generation with multiple templates, keyword optimization, and ATS-friendly formatting</li>
-                            <li>💼 <strong>LinkedIn Optimizer:</strong> AI analysis of profiles with suggestions for headline, summary, and experience sections</li>
-                            <li>📸 <strong>Headshot Generation:</strong> AI-enhanced professional headshot creation from casual photos</li>
-                            <li>📋 <strong>Application Tracker:</strong> Kanban-style pipeline for managing job applications with interview reminders</li>
-                            <li>🤖 <strong>Cover Letter Generator:</strong> Custom cover letters tailored to each job description using LLM technology</li>
-                            <li>📊 <strong>Interview Prep:</strong> AI-generated practice questions based on target role and company</li>
-                            <li>🔔 <strong>Job Alerts:</strong> Personalized job notifications based on skills, location, and preferences</li>
-                            <li>📈 <strong>Analytics Dashboard:</strong> Application metrics, response rates, and career progress tracking</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Integrating multiple AI services while maintaining fast response times and ensuring content quality.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">Node.js</span>
-                            <span class="badge bg-primary">React</span>
-                            <span class="badge bg-primary">OpenAI API</span>
-                            <span class="badge bg-primary">MongoDB</span>
-                            <span class="badge bg-primary">Python</span>
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">Leads &amp; CRM Automation</h6>
+                                <p class="text-muted small mb-2">Extended Prefex CRM with smart lead assignment, SLA-based escalation, and field operations coordination.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">Laravel</span>
+                                    <span class="badge badge-tech">PHP</span>
+                                    <span class="badge badge-tech">AJAX</span>
+                                    <span class="badge badge-tech">MySQL</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=leads-crm" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
                         </div>
-                        <p><strong>Company:</strong> Fovty Solutions</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Modal 7: LinkedIn Automation Extension -->
-        <div class="modal fade" id="project-linkedin-automation" tabindex="-1" aria-labelledby="project-linkedin-automation-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-linkedin-automation-label">LinkedIn Automation Extension</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>A powerful Chrome extension designed for recruiters to efficiently extract professional profile data and automate connection and outreach workflows on LinkedIn.</p>
-                        <ul>
-                            <li>👤 <strong>Profile Extraction:</strong> One-click scraping of candidate profiles including work history, skills, and contact info</li>
-                            <li>📊 <strong>Data Export:</strong> Export collected data to CSV, JSON, or directly to ATS integration</li>
-                            <li>🤝 <strong>Auto-Connect:</strong> Personalized connection requests with template customization and follow-up sequences</li>
-                            <li>💬 <strong>Outreach Automation:</strong> Automated messaging campaigns with personalization tokens</li>
-                            <li>📅 <strong>Schedule Outreach:</strong> Time-optimized message delivery based on recipient timezone</li>
-                            <li>📈 <strong>Engagement Tracking:</strong> Monitor connection acceptance rates and message responses</li>
-                            <li>🛡️ <strong>Safety Features:</strong> Rate limiting, random delays, and session rotation to prevent account restrictions</li>
-                            <li>🔐 <strong>Data Privacy:</strong> Local data storage with optional cloud sync and encryption</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Building reliable automation that works within LinkedIn's terms while providing meaningful productivity gains.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">JavaScript</span>
-                            <span class="badge bg-primary">Puppeteer</span>
-                            <span class="badge bg-primary">Python</span>
-                            <span class="badge bg-primary">Chrome API</span>
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">Business Idea Marketplace</h6>
+                                <p class="text-muted small mb-2">Two-sided marketplace with Stripe escrow, NDA-gated document release, and in-platform offer negotiation.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">Node.js</span>
+                                    <span class="badge badge-tech">React</span>
+                                    <span class="badge badge-tech">MongoDB</span>
+                                    <span class="badge badge-tech">Stripe API</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=idea-marketplace" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
                         </div>
-                        <p><strong>Company:</strong> Fovty Solutions</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Modal 8: Recommendation System -->
-        <div class="modal fade" id="project-recommendation-system" tabindex="-1" aria-labelledby="project-recommendation-system-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="project-recommendation-system-label">Recommendation System</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>A collaborative filtering-based recommendation engine developed during my internship, designed to analyze user behavior and provide personalized product suggestions.</p>
-                        <ul>
-                            <li>🧠 <strong>ML Algorithm:</strong> Implemented user-based and item-based collaborative filtering for personalized recommendations</li>
-                            <li>📊 <strong>Data Pipeline:</strong> End-to-end data preprocessing including cleaning, transformation, and feature engineering</li>
-                            <li>🔧 <strong>Model Optimization:</strong> Hyperparameter tuning and cross-validation to improve recommendation accuracy</li>
-                            <li>🌐 <strong>REST API:</strong> Flask-based API endpoints for real-time recommendation retrieval</li>
-                            <li>📈 <strong>Performance Metrics:</strong> Evaluation using precision, recall, and F1-score for model validation</li>
-                            <li>💾 <strong>Scalable Storage:</strong> Efficient data structures for handling large user-item matrices</li>
-                            <li>🧪 <strong>A/B Testing Framework:</strong> Setup for testing recommendation quality with live user feedback</li>
-                        </ul>
-                        <p><strong>Key Challenge:</strong> Building a recommendation engine that could scale to thousands of users while maintaining real-time response times.</p>
-                        <div class="mb-3">
-                            <span class="badge bg-primary">Python</span>
-                            <span class="badge bg-primary">Flask</span>
-                            <span class="badge bg-primary">Scikit-learn</span>
-                            <span class="badge bg-primary">Pandas</span>
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">AI Career Platform</h6>
+                                <p class="text-muted small mb-2">ATS resume builder, LinkedIn optimizer, AI headshots, LLM cover letters, and a Kanban job tracker.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">Node.js</span>
+                                    <span class="badge badge-tech">React</span>
+                                    <span class="badge badge-tech">OpenAI API</span>
+                                    <span class="badge badge-tech">Python</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=ai-career" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
                         </div>
-                        <p><strong>Company:</strong> Allsoft Solutions (Intern)</p>
-                        <p class="text-muted"><em>Private — NDA Protected</em></p>
                     </div>
+
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">LinkedIn Automation Extension</h6>
+                                <p class="text-muted small mb-2">Chrome extension for recruiters — profile scraping, connection campaigns, timezone-aware scheduling, ATS export.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">JavaScript</span>
+                                    <span class="badge badge-tech">Puppeteer</span>
+                                    <span class="badge badge-tech">Python</span>
+                                    <span class="badge badge-tech">Chrome API</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=linkedin-automation" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Allsoft Solutions -->
+                <h5 class="text-muted fw-semibold mb-3">
+                    <i class="bi bi-building me-2"></i>Allsoft Solutions <span class="fw-normal fs-6">(Internship)</span>
+                </h5>
+                <div class="row gy-3">
+
+                    <div class="col-lg-6">
+                        <div class="proj-card d-flex flex-column gap-2 p-3 border rounded h-100 bg-white">
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-1">Recommendation System</h6>
+                                <p class="text-muted small mb-2">Collaborative filtering engine (user-based + item-based CF) with Flask API, hyperparameter tuning, and an A/B testing framework.</p>
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge badge-tech">Python</span>
+                                    <span class="badge badge-tech">Flask</span>
+                                    <span class="badge badge-tech">Scikit-learn</span>
+                                    <span class="badge badge-tech">Pandas</span>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="pages/portfolio-details.html?id=recommendation-system" class="proj-card-btn btn btn-sm btn-outline-secondary w-100">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- /Professional Work Section -->
+
 
         <!-- Services Section -->
         <section id="services" class="services section">

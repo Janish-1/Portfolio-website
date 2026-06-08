@@ -1178,6 +1178,44 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Project Cards (Portfolio + Professional Work)
+--------------------------------------------------------------*/
+.proj-card {
+  transition: border-color 0.22s ease, box-shadow 0.22s ease;
+  cursor: pointer;
+  background-color: #ffffff !important;
+}
+
+.proj-card:hover {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 4px 18px color-mix(in srgb, var(--accent-color), transparent 72%);
+}
+
+.proj-card:hover .proj-card-btn {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: transparent;
+}
+
+/* Light-blue tech stack badges */
+.badge-tech {
+  background-color: color-mix(in srgb, var(--accent-color), white 82%);
+  color: color-mix(in srgb, var(--accent-color), #003355 30%);
+  font-weight: 500;
+  font-size: 0.72rem;
+  padding: 4px 9px;
+  border-radius: 4px;
+}
+
+/* Prevent shadow clipping in isotope & professional-work rows */
+.isotope-container,
+#professional-work .row {
+  padding-top: 8px;
+  padding-bottom: 4px;
+  overflow: visible !important;
+}
+
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
