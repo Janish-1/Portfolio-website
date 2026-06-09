@@ -245,14 +245,16 @@
               </ul>
               <p><strong>Key Challenge:</strong> Handling peak-hour concurrency while maintaining data integrity across multiple POS terminals simultaneously.</p>
               <p><strong>Tech Stack:</strong> Laravel · MySQL · jQuery · Bootstrap<br>
-              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em><br>
+              <strong>Parent Company:</strong> Quandi</p>
+              <p class="text-danger fw-semibold">⚠ This service is currently offline — the parent company (Quandi) has shut down operations.</p>
             `,
         },
         {
             title: "Law Firm Management System",
             type: "Enterprise Software",
             client: "Fovty Solutions",
-            project_link: "#",
+            project_link: "https://www.vakilbench.com/",
             description: "End-to-end legal practice management — case lifecycle, encrypted document storage, client portal, and billing.",
             image: "",
             id: "law-firm",
@@ -277,7 +279,7 @@
         {
             title: "Shipment Tracking CRM",
             type: "Logistics Software",
-            client: "Fovty Solutions",
+            client: "Fission Tech",
             project_link: "#",
             description: "Unified multi-carrier tracking with WebSocket updates, automated invoicing, and a self-service customer portal.",
             image: "",
@@ -297,7 +299,7 @@
               </ul>
               <p><strong>Key Challenge:</strong> Normalizing inconsistent tracking data formats from multiple carrier APIs into a unified system.</p>
               <p><strong>Tech Stack:</strong> Laravel · WebSockets · External Carrier APIs · MySQL<br>
-              <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+              <strong>Company:</strong> <a href="https://www.linkedin.com/company/fission-tech/" target="_blank" rel="noopener noreferrer">Fission Tech</a> — <em>NDA Protected</em></p>
             `,
         },
         {
@@ -324,6 +326,7 @@
               <p><strong>Key Challenge:</strong> Building a flexible automation engine that handles complex business rules while remaining user-configurable.</p>
               <p><strong>Tech Stack:</strong> Laravel · PHP · AJAX · MySQL<br>
               <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+              <p class="text-danger fw-semibold">⚠ This service is currently offline — no live link available.</p>
             `,
         },
         {
@@ -350,13 +353,14 @@
               <p><strong>Key Challenge:</strong> Building trust between buyers and sellers while protecting intellectual property throughout the transaction lifecycle.</p>
               <p><strong>Tech Stack:</strong> Node.js · React · MongoDB · Stripe API<br>
               <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+              <p class="text-danger fw-semibold">⚠ This service is currently offline — no live link available.</p>
             `,
         },
         {
             title: "AI Career Platform",
             type: "AI / SaaS",
             client: "Fovty Solutions",
-            project_link: "#",
+            project_link: "https://www.careerignitor.ai/",
             description: "ATS resume builder, LinkedIn optimizer, AI headshots, LLM cover letters, and a Kanban job tracker.",
             image: "",
             id: "ai-career",
@@ -402,6 +406,7 @@
               <p><strong>Key Challenge:</strong> Building reliable automation that respects platform limits while providing meaningful recruiter productivity gains.</p>
               <p><strong>Tech Stack:</strong> JavaScript · Chrome Extension API · Puppeteer · Python<br>
               <strong>Company:</strong> Fovty Solutions — <em>NDA Protected</em></p>
+              <p class="text-danger fw-semibold">⚠ This service is currently offline — no live link available.</p>
             `,
         },
         {
