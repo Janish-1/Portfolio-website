@@ -186,18 +186,18 @@
         `,
         },
         {
-            title: "Compresso",
+            title: "Clip Keeper",
             type: "Desktop Application",
             client: "Personal",
             project_link: "#",
             description: "Local-first desktop video downloader for 16+ platforms with a Pro paid tier — license validation in Rust, feature enforcement in Python, UI gates in React.",
             image: "",
             placeholderColor: "#0d1b2a",
-            id: "compresso",
+            id: "clip-keeper",
             techStack: ["Tauri", "Rust", "React", "Python", "yt-dlp"],
-            detailsLink: "pages/portfolio-details.html?id=compresso",
+            detailsLink: "pages/portfolio-details.html?id=clip-keeper",
             filterClass: "filter-desktop",
-            detail_title: "Compresso – Local-First Desktop Video Downloader",
+            detail_title: "Clip Keeper – Local-First Desktop Video Downloader",
             detail_description: `
           <p>
             A local-first desktop video downloader built with Tauri and React on the frontend, backed by Python subprocess management for media extraction. The app supports 16+ streaming platforms — including YouTube, TikTok, Twitter/X, Instagram, Vimeo, JioSaavn, Bandcamp, Mixcloud, and more — through a modular download pipeline that abstracts platform-specific URL parsing, format selection, and media extraction behind a unified interface. The project is architected as three distinct layers communicating across strict trust boundaries: a React + TypeScript frontend handles user interaction and feature gating, a Rust backend manages license validation and OS-level process spawning, and Python scripts perform the actual media extraction and file writing.
@@ -207,15 +207,15 @@
           </p>
           <ul>
             <li><strong>Three-Layer Trust Architecture:</strong> The React frontend never handles license state directly — it queries Rust via <code>invoke(&#60;check_license&#62;)</code> through Tauri's IPC bridge, receives a boolean, and conditionally renders upgrade prompts. Rust holds the only in-memory view of license validity and optionally rechallenges Lemon Squeezy once per day. Python receives a <code>--premium</code> flag as a local command-line argument — enforcing platform allowlists, concurrency limits, and feature access at the extraction layer, independent of any UI decision.</li>
-            <li><strong>Offline-First License Model:</strong> On first activation, the Rust backend posts the license key to Lemon Squeezy's <code>/v1/licenses/activate</code> endpoint, then writes the response — including key, email, activation timestamp, and validity — to <code>~/.compresso/license.json</code>. All subsequent validation reads from this local cache, meaning the app functions fully without internet after the initial purchase. A daily background revalidation against the API catches revoked or expired keys without disrupting normal operation.</li>
+            <li><strong>Offline-First License Model:</strong> On first activation, the Rust backend posts the license key to Lemon Squeezy's <code>/v1/licenses/activate</code> endpoint, then writes the response — including key, email, activation timestamp, and validity — to <code>~/.clip-keeper/license.json</code>. All subsequent validation reads from this local cache, meaning the app functions fully without internet after the initial purchase. A daily background revalidation against the API catches revoked or expired keys without disrupting normal operation.</li>
             <li><strong>Download Pipeline:</strong> When a user submits a URL, the React frontend validates the platform, checks concurrency limits, and sends the request to Rust. Rust loads the license state, applies the <code>--premium</code> flag based on validity, and spawns a Python subprocess with the URL, quality preferences, and license tier as arguments. Python uses yt-dlp under the hood, wrapped with custom platform-specific handlers that parse available formats, handle geo-restrictions through cookie injection, extract metadata, and write files to a configurable download directory. Output streams back to Rust via stdout/stderr JSON messages for real-time progress in the React UI.</li>
             <li><strong>Bookmark Scanner (Pro):</strong> Iterates through the browser's exported bookmarks, visits each page URL headlessly using a lightweight HTTP client with cookie authentication, scrapes for embedded media players, and surfaces downloadable content directly in the app's interface. This bridges the gap between casual browsing and media collection without requiring users to manually copy URLs.</li>
             <li><strong>Saved Library & Playlist Sync (Pro):</strong> Users can save named playlists to a local SQLite database. Each playlist polls its source URLs at configurable intervals to detect new uploads, then surfaces additions as notification badges. The free tier locks this to three playlists; Pro removes the cap entirely. Playlist entries store thumbnail, title, duration, and download status for quick scanning without re-fetching metadata.</li>
-            <li><strong>Cookie Authentication (Pro):</strong> For platforms like YouTube, Twitter, and Bandcamp where user accounts unlock private content, age-restricted material, or higher-quality streams, Pro users can export browser cookies as a JSON artifact and point Compresso at it. The Python extraction layer injects the cookie file into yt-dlp's session, enabling authenticated requests without credential storage in the app itself.</li>
-            <li><strong>Self-Contained Runtime:</strong> Beyond initial license activation, Compresso requires no server infrastructure, no account creation, and no persistent background services. The Tauri bundle is a single executable — on Windows, a portable ~80 MB binary; on macOS, a standard app bundle. Updates are delivered through the OS's native package manager or direct binary replacement.</li>
+            <li><strong>Cookie Authentication (Pro):</strong> For platforms like YouTube, Twitter, and Bandcamp where user accounts unlock private content, age-restricted material, or higher-quality streams, Pro users can export browser cookies as a JSON artifact and point Clip Keeper at it. The Python extraction layer injects the cookie file into yt-dlp's session, enabling authenticated requests without credential storage in the app itself.</li>
+            <li><strong>Self-Contained Runtime:</strong> Beyond initial license activation, Clip Keeper requires no server infrastructure, no account creation, and no persistent background services. The Tauri bundle is a single executable — on Windows, a portable ~80 MB binary; on macOS, a standard app bundle. Updates are delivered through the OS's native package manager or direct binary replacement.</li>
           </ul>
           <p>
-            <strong>Key Engineering Decision:</strong> Validation runs exclusively in Rust, never exposed to the JS frontend. Enforcement runs in Python, adjacent to the actual download logic. The frontend handles only presentation. This means even a determined user who patches the React code to remove upgrade prompts cannot bypass platform limits or access private content — those gates exist in compiled Rust and Python code on disk. The local <code>~/.compresso/</code> directory is the only persistent state, making the app fully uninstallable by deletion.
+            <strong>Key Engineering Decision:</strong> Validation runs exclusively in Rust, never exposed to the JS frontend. Enforcement runs in Python, adjacent to the actual download logic. The frontend handles only presentation. This means even a determined user who patches the React code to remove upgrade prompts cannot bypass platform limits or access private content — those gates exist in compiled Rust and Python code on disk. The local <code>~/.clip-keeper/</code> directory is the only persistent state, making the app fully uninstallable by deletion.
           </p>
           <p>
             <strong>Tech Stack:</strong> Tauri v2 · Rust · React · TypeScript · Python · yt-dlp · Browser Cookie Formats · Lemon Squeezy License API<br>
@@ -224,18 +224,18 @@
         `,
         },
         {
-            title: "JANX",
+            title: "File Foundry",
             type: "Web Application / SaaS",
             client: "Personal",
             project_link: "#",
             description: "All-in-one file conversion and processing platform with 23+ tools, auth, job queue, and Stripe payments — ready to launch as a monetizable SaaS.",
             image: "",
             placeholderColor: "#1a1a2e",
-            id: "janx",
+            id: "file-foundry",
             techStack: ["React", "Tailwind CSS", "Express", "Node.js", "MongoDB", "Redis", "Bull", "FFmpeg", "LibreOffice", "Sharp", "Stripe", "AWS S3"],
-            detailsLink: "pages/portfolio-details.html?id=janx",
+            detailsLink: "pages/portfolio-details.html?id=file-foundry",
             filterClass: "filter-webapp",
-            detail_title: "JANX – All-in-One File Conversion Platform",
+            detail_title: "File Foundry – All-in-One File Conversion Platform",
             detail_description: `
           <p>
             A cloud-native file conversion and processing platform built as a full-stack SaaS application. The frontend is a React 18 application styled with Tailwind CSS, featuring a custom dark theme, per-tool SEO metadata, Open Graph tags, a responsive mobile navigation system, and a multi-step file upload experience with real-time progress indicators and drag-and-drop support. The backend runs on Express 5 with a layered middleware stack: Multer handles multipart uploads with plan-based file size limits and MIME whitelist enforcement, Mongoose manages MongoDB persistence with TTL indexes for automatic file expiration, Bull orchestrates async conversion jobs over Redis (with a transparent in-process fallback when Redis is unavailable), and a comprehensive error handling middleware enforces consistent JSON error responses across all endpoints.
@@ -256,7 +256,7 @@
             <strong>Architectural Decisions:</strong> The backend deliberately avoids a monolithic conversion handler in favor of per-tool middleware chains registered at route level — each tool declares its input MIME types, output format, processing library, and estimated duration, letting the middleware enforce constraints before a single byte is processed. The job queue decouples file ingestion from CPU-intensive conversion (especially LibreOffice and FFmpeg) so the Express process stays responsive under load. CDN delivery is planned for Phase 3 through Cloudflare R2's built-in edge caching once cloud storage is confirmed in production.
           </p>
           <p>
-            <strong>Current State & Launch Roadmap:</strong> Code is complete for all 23 tools, authentication, dashboard, queue, storage, and payment wiring. The remaining blockers before launch are: configuring live Stripe keys (currently in test mode setup), provisioning Redis (or confirming the in-process fallback is sufficient for initial load), installing FFmpeg and LibreOffice on the production server, deploying the Express backend to Railway or Render, deploying the React frontend to Vercel with a <code>janx.app</code> domain, configuring MongoDB Atlas for production, enabling Sentry error monitoring, and updating CORS to allow the production frontend origin.
+            <strong>Current State & Launch Roadmap:</strong> Code is complete for all 23 tools, authentication, dashboard, queue, storage, and payment wiring. The remaining blockers before launch are: configuring live Stripe keys (currently in test mode setup), provisioning Redis (or confirming the in-process fallback is sufficient for initial load), installing FFmpeg and LibreOffice on the production server, deploying the Express backend to Railway or Render, deploying the React frontend to Vercel with a <code>filefoundry.app</code> domain, configuring MongoDB Atlas for production, enabling Sentry error monitoring, and updating CORS to allow the production frontend origin.
           </p>
           <p>
             <strong>Tech Stack:</strong> React 18 · TypeScript · Tailwind CSS · react-helmet-async · Express 5 · Node.js · Mongoose · MongoDB · Redis · Bull · Multer · FFmpeg (fluent-ffmpeg) · LibreOffice · Sharp · Puppeteer · pdf-lib · Stripe Webhooks · AWS S3 / Cloudflare R2<br>
@@ -747,7 +747,7 @@
 
     function getProjectIcon(projectId) {
         const icons = {
-            'compresso': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>',
+            'clip-keeper': '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>',
         };
         return icons[projectId] || '<i class="bi bi-folder" style="font-size: 2rem;"></i>';
     }
